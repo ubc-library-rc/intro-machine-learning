@@ -1,7 +1,7 @@
-title: Title of workshop
+title: Introduction to Machine Learning
 remote_theme: ubc-library-rc/rc-theme
 color_scheme: rc
-github_repo_url: "https://github.com/ubc-library-rc/REPOSITORY-NAME/" 
+github_repo_url: "https://github.com/ubc-library-rc/intro-machine-learning/" 
 
 # license information for workshop content
 license_name: "Creative Commons Attribution 4.0 International License"

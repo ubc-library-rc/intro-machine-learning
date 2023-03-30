@@ -1,105 +1,453 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <!-- Title of page (as it will appear in search results) -->
-  <title>Building Exhibits with Omeka</title>
+<!-- Title of page (as it will appear in search results) -->
+<title>Introduction to Machine Learning</title>
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
 
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
 </head>
 
-<body>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h3>Introduction to Machine Learning</h3>
+				https://ubc-library-rc.github.io/intro-machine-learning/
+				<aside class="notes">
+					<p>
+					The goal of this workshop is to show you the basic commands in Git and Github so that you can start to use it
+					to track your projects. This workshop only introduces a few features of Git. This session is prepared for you, so if you 
+					have questions or feel the pace is not aligned with your level, please let us know. 
+					</p>
+				</aside>
+				</section>
 
-<div class="reveal">
+				<section style="text-align: left;">
+					<h3>Land Acknowledgement</h3>
+					<p>UBC Vancouver is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam) peoples.</p>
+					<aside class="notes">
+						<p>
+						But before going into more details I would like to begin by acknowledging that I am fortunate to present this workshop in Burnaby which is the unceded territory of the Coast Salish People.
+						</p>
+					</aside>
+				</section>
 
-	<div class="slides">
 
-    <section data-background="#002145">
-      <h3>UBC Library <br> Research Commons</h3>
-      <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote>
-    </section>
+				<section>
+					Use the Zoom toolbar to engage
+					<img  data-src="figures/zoom_toolbar.png" alt="The Zoom toolbar">
+					<div class="fragment">
+						<p style="font-size: smaller"><em>Participants</em> window</p>
+						<img data-src="figures/participants_window_menu.png" alt="The participants menu">
+					</div>
+					<aside class="notes">
+						<p>
+						Active participation makes the session so much fun and gives me and your peers much more energy. We are
+						all sitting in our offices with little sound. Your voices and perspectives enlivens the session. We encourage
+						you to engage with each other and instructors.
 
-    <section data-background="#002145">
-       <p> More from the Research Commons at (UBC-V)</p>
-       <ul>
-         <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
-         <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming events</a></li>
-         <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources (OERs)</a></li>
-       </ul>
-    </section>
+						The participants window lists everyone in the session and click the icons at the bottom to communicate with
+						the instructors.
 
-    <section data-background="#002145">
-        <p> And  from the Center for Scholarly Communication (UBC-O)</p>
-        <ul>
-          <li><a href="https://library.ok.ubc.ca/research/csc/">library.ok.ubc.ca/research/csc/</a></li>
-          <li><a href="https://library.ok.ubc.ca/research/csc/workshops/">Upcoming events</a></li>
-          </ul>
-    </section>
+						You can also use the Chat windows to comment or ask questions at any time. It is also a good place to share
+						problems with your audio connection.
+						</p>
+					</aside>
+				</section>
 
-    <section>
+				<section>
+					<img width="500px" data-src="figures/open_annotate_toolbar.png" alt="annotate menu">
+					<div class="fragment" style="padding-top: 20px">
+						<img data-src="figures/annotate_toolbar.png" alt="annotation toolbar">
+					</div>
+					<aside class="notes">
+						<p>
+						For the next slide, use the annotation toolbar on the top of the screen.
+						</p>
+					</aside>
+				</section>
 
-    </section>
+				<section>
+					<div style="position: relative; float: left; width: 25%; font-size: smaller">
+						<p>I am not familiar with programming.</p>
+					</div>
+					<div style="position: relative; float: right; width: 25%; font-size: smaller">
+						<p>I use programming in my work/research</p>
+					</div>
+					<div style="clear: both">
+						<hr/>
+					</div>
+					<aside class="notes">
+						<p>
+						I was not sure about the right question to get a better idea of the audience for this workshop as Machine learning 
+						is a hot topic right now. I would like to ask you to put a mark on this spectrum and also unmute yourself or write in
+						the chat the reason you are attending in this workshop.
+						</p>
+					</aside>
+				</section>
 
-    <section>
+				<section data-background="#e6f7ff">
+					<h3>Learning Objectives</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Define Machine Learning and recall the types of Machine Learning</li>
+						<li class="fragment fade-in-then-semi-out">Compare methods and techniques of Machine Learning</li>
+						<li class="fragment fade-in-then-semi-out">Identify appropriate methods based on the use cases</li>
+						<li class="fragment fade-in-then-semi-out">Think about the ethical implications of using Machine Learning</li>
+					</ul>
+					<aside class="notes">
+						<p>
+							
+						</p>
+					</aside>
+				</section>
 
-    </section>
+				<section data-background="#e6f7ff">
+					<h3>Pre-workshop setup</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">UBC CYZYGY (https://ubc.syzygy.ca/)</li>
+						<li class="fragment fade-in-then-semi-out">GOOGLE COLAB (https://colab.research.google.com/)</li>
+					</ul>
+					<p>For more information, check out <a href="https://ubc-library-rc.github.io/intro-git/">Pre-workshop setup</a></p>
+					<aside class="notes">
+						<p>
+							For hands-on exercises, we will use [Python](https://www.python.org/) on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
 
-    <section>
+							This workshop will involve hands-on exercises that require the use of programming tools and libraries commonly used in machine learning, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
 
-    </section>
+						</p>
+					</aside>
 
-</div>
+				</section>
 
-<script src="https://ubc-library-rc.github.io/reveal-ubc/js/reveal.js"></script>
+				<section data-background="#e6f7ff">
+					<h3>What is Machine Learning</h3>
+					<aside class="notes">
+						<p>
+							Machine learning is a field of computer science that involves teaching computers to learn from data, without explicitly defining the rules applicable to the problem.
 
-	<script>
+							In machine learning, algorithms are trained on large datasets to recognize patterns and relationships in the data, and then use this knowledge to make predictions or decisions about new data. This is done by creating mathematical models that can generalize patterns in the data and use them to make predictions or decisions about new data. Machine learning has many practical applications, including image and speech recognition, natural language processing, fraud detection, and predictive analytics in healthcare, finance, and many other fields.
+						</p>
+					</aside>
+				</section>
 
-		// More info https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: true,
-			progress: true,
-			center: true,
-			hash: true,
 
-			transition: 'none', // none/fade/slide/convex/concave/zoom
+				<section data-background="#e6f7ff">
+					<h3>Building a Machine Learning Model</h3>
+					<img height="600px" data-src="https://editor.analyticsvidhya.com/uploads/52606ML-stage.png">
+					<aside class="notes">
+						Building a machine learning model involves some or all of the following steps. While we do not cover the data collection step here, it is an important process that should be planned with extra care.
 
-		// More info https://github.com/hakimel/reveal.js#dependencies
-			dependencies: [
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/highlight/highlight.js' },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/search/search.js', async: true },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/zoom-js/zoom.js', async: true },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/notes/notes.js', async: true }
-				]
-			});
+						- **Data Collection:** The first step in machine learning involves gathering and preparing data for use in a machine learning model. This process is critical because the quality of the data used in the model directly impacts its accuracy and effectiveness. This data can come from various sources, such as sensors, user inputs, or databases.
+						
+						- **Data Preprocessing:** Before the data can be used for machine learning, it needs to be cleaned, transformed, and formatted into a suitable format to be used by machine learning algorithms.
+						
+						- **Model Training:** Once the data is ready, it is used to train a machine learning model. The model is a mathematical representation of the patterns and relationships in the data.
+						
+						- **Model Evaluation:** After the model has been trained, it needs to be evaluated to ensure that it is performing accurately. This is done using a test set of data that was not used during the training process.
+						
+						- **Model Deployment:** Once the model has been trained and evaluated, it can be deployed for use in a production environment. This involves integrating the model into a larger system and ensuring that it can handle real-world data. This step involves choosing a suitable employment platform.
+						
+						- **Model Improvement:** Machine learning is an iterative process, so the model may need to be improved over time. This can involve retraining or fine-tuning its parametersthe with new data or continues stream of data.
+					</aside>
+				</section>
 
-	</script>
+				<section>
+					<h3>Predictors and Classifiers</h3>
+					<img height="600px" data-src="../content/images/Classifiers.jpg">
+					<aside class="notes">
+						
+						A predictor is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
 
-	</body>
-</html>
+						A classifier, on the other hand, is an algorithm that takes in input data and assigns it to one of several pre-defined classes or categories. The goal of a classifier is to learn a decision boundary that separates the input data into these classes. For example, a classifier might take in an image and classify it as a dog or a cat.
+
+						There are many types of predictors and classifiers, each with its own set of algorithms and techniques. Some examples of predictors include linear regression, decision trees, and neural networks. Some examples of classifiers include logistic regression, support vector machines, and k-nearest neighbors.
+
+						The choice between using a predictor or classifier depends on the nature of the problem at hand. If the goal is to predict a continuous variable, such as price, a predictor is typically used. If the goal is to classify data into discrete categories, such as whether an image is of a dog or a cat, a classifier is typically used.
+					</aside>
+
+				</section>
+
+				<section>
+					<h3>Comparing to Classic Science</h3>
+					<div style="font-size:smaller; text-align: left; margin-left: 30px">
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Data-driven vs theory-driven</li>
+							<li class="fragment fade-in-then-semi-out">Algorithmic vs experimental</li>
+							<li class="fragment fade-in-then-semi-out">Prediction vs explanation</li>
+							<li class="fragment fade-in-then-semi-out">Generalization vs specificity</li>
+							<li class="fragment fade-in-then-semi-out">Iterative vs linear</li>
+							<li class="fragment fade-in-then-semi-out">Bias vs objectivity</li>
+						</ul>
+					</div>
+					<aside class="notes">
+						- **Data-driven vs theory-driven:** Machine learning is data-driven, which means that it uses data to make predictions and decisions. Classic science is theory-driven, which means that it starts with a hypothesis or theory and then tests it using experiments.
+
+						- **Algorithmic vs experimental:** Machine learning uses algorithms to learn patterns in data and make predictions. Classic science uses experiments to test hypotheses and theories.
+
+						- **Prediction vs explanation:** Machine learning is often used for prediction, such as predicting which customers are most likely to buy a product or which patients are most likely to develop a certain disease. Classic science is often used for explanation, such as explaining how a chemical reaction works or how a disease progresses.
+
+						- **Generalization vs specificity:** Machine learning algorithms are designed to generalize patterns across large datasets, meaning they can make predictions on new, unseen data. Classic science is often specific to a particular problem or phenomenon.
+
+						- **Iterative vs linear:** Machine learning is an iterative process, which means that it learns from its mistakes and improves over time. Classic science is often a linear process, with a clear start and end point.
+
+						- **Bias vs objectivity:** Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Types of Machine Learning</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Supervised Learning</li>
+						<li class="fragment fade-in-then-semi-out">Unsupervised Learning</li>
+						<li class="fragment fade-in-then-semi-out">Reinforcement Learning</li>
+					</ul>
+					<aside class="notes">
+						There are different types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning, each with its own set of algorithms and techniques. 
+
+						* Supervised Learning:
+
+						Supervised learning is a type of machine learning where an algorithm is trained on a labeled dataset, meaning that the dataset has input features (X) and corresponding output labels (Y). The goal of supervised learning is to learn a function that maps the input features to the output labels. Once the model is trained, it can be used to make predictions on new data. Examples of supervised learning tasks include image classification, speech recognition, and regression analysis.
+
+						* Unsupervised Learning:
+
+						Unsupervised learning is a type of machine learning where the algorithm is trained on an unlabeled dataset, meaning that there are no output labels (Y) associated with the input features (X). The goal of unsupervised learning is to learn patterns and structure in the data without the help of a labeled dataset. Examples of unsupervised learning tasks include clustering, anomaly detection, and dimensionality reduction.
+
+						* Reinforcement Learning:
+
+						Reinforcement learning is a type of machine learning that involves an agent interacting with an environment to learn how to make decisions that maximize a reward. The agent receives feedback from the environment in the form of rewards or penalties, and its goal is to learn a policy that maximizes the expected long-term reward. Reinforcement learning is often used in robotics, game playing, and control systems.
+					</aside>
+				</section>
+
+				<section>
+					<h3>AI & Machine Learning</h3>
+					<aside class="notes">
+						Artificial intelligence (AI) and machine learning (ML) are related but distinct fields of study.
+
+						AI is a broad field that encompasses the study of creating intelligent machines that can perform tasks that typically require human intelligence, such as natural language processing, computer vision, and decision-making. AI includes both rule-based systems that are programmed explicitly and machine learning-based systems that learn from data.
+
+						Machine learning, on the other hand, is a subset of AI that focuses specifically on developing algorithms that can learn patterns in data and make predictions or decisions based on that data. In other words, machine learning is a way of achieving AI by enabling computers to learn from data without being explicitly programmed.
+
+						One way to think about the relationship between AI and ML is that machine learning is a technique used within the broader field of AI. Machine learning is a powerful tool for building intelligent systems because it can learn from large amounts of data, improve its performance over time, and generalize to new data.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Application of Machine Learning</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Self-driving Cars</li>
+						<li class="fragment fade-in-then-semi-out">Medical Diagnosis</li>
+						<li class="fragment fade-in-then-semi-out">Natural Language Processing</li>
+					</ul>
+					<aside class="notes">
+						Self-driving Cars: One of the most exciting and transformative applications of machine learning is in the field of self-driving cars. Self-driving cars use sensors such as cameras, LIDAR, and radar to gather information about their surroundings, and machine learning algorithms are used to process this information and make decisions in real-time. These algorithms can identify obstacles, pedestrians, and other vehicles on the road and make decisions such as changing lanes, braking, or accelerating. Self-driving cars have the potential to reduce accidents, improve traffic flow, and provide mobility to people who cannot drive, such as the elderly and disabled.
+
+						Medical Diagnosis: Machine learning is also being used to improve medical diagnosis and treatment. For example, machine learning algorithms can analyze medical images such as X-rays, MRIs, and CT scans to identify patterns and anomalies that may indicate a particular disease or condition. This can help physicians make more accurate diagnoses and develop personalized treatment plans. Machine learning can also be used to analyze electronic health records and other health data to identify risk factors for certain diseases and develop preventive strategies.
+
+						Natural Language Processing: Natural language processing (NLP) is another fascinating application of machine learning. NLP algorithms can analyze and understand human language, which has the potential to revolutionize communication and interaction between humans and machines. NLP is used in various applications such as chatbots, voice assistants, and language translation. For example, chatbots can use NLP algorithms to understand customer inquiries and provide responses in natural language. Voice assistants such as Siri and Alexa use NLP algorithms to understand and respond to voice commands. Machine learning-based language translation tools can translate text between languages with increasing accuracy.
+
+					</aside>
+				</section>
+
+				<section>
+					<h3>Limits of Machine Learning</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Garbage In = Garbage Out</li>
+						<li class="fragment fade-in-then-semi-out">Data Limitation</li>
+						<li class="fragment fade-in-then-semi-out">Generalization and overfitting</li>
+						<li class="fragment fade-in-then-semi-out">Inability to explain answers</li>
+						<li class="fragment fade-in-then-semi-out">Ethics and Bias Limitations</li>
+						<li class="fragment fade-in-then-semi-out">Computational Limitations</li>
+					</ul>
+					<aside class="notes">
+						* Garbage In = Garbage Out
+						In machine learning, the quality of the output model is directly dependent on the quality of the input data used to train it. If the input data is incomplete, noisy, or biased, the resulting model may be inaccurate or unreliable.
+						
+						For example, suppose a machine learning model is being developed to predict which loan applications are likely to be approved by a bank. If the training dataset only contains loan applications from a particular demographic group or geographic region, the resulting model may be biased towards that group or region and may not generalize well to other groups or regions. This could lead to discrimination and unfair lending practices.
+						
+						* Data Limitation
+						Machine learning algorithms are only as good as the data they are trained on. If the data is biased, incomplete, or noisy, the algorithm may not be able to learn the underlying patterns or may learn incorrect patterns. Also, machine learning models require large amounts of labeled data for training, which can be expensive and time-consuming to obtain.
+						
+						* Generalization and overfitting
+						Machine learning models are typically trained on a specific dataset, and their ability to generalize to new data outside of that dataset may be limited. Overfitting can occur if the model is too complex or if it is trained on a small dataset, causing it to perform well on the training data but poorly on new data. When a model is overfitting, it is essentially memorizing the training data rather than learning the underlying patterns in the data.
+						
+						* Inability to explain answers
+						Machine learning models can be complex and difficult to interpret, making it challenging to understand why they make certain predictions or decisions. This can be a problem in domains such as healthcare or finance where it is important to be able to understand the rationale behind a decision.
+						
+						* Ethics and Bias Limitations
+						Machine learning algorithms can amplify existing biases in the data they are trained on, leading to unfair or discriminatory outcomes. There is a risk of unintended consequences when using machine learning algorithms in sensitive areas such as criminal justice, hiring decisions, and loan applications. One example of bias in machine learning is in facial recognition technology. Studies have shown that facial recognition systems are less accurate in identifying people with darker skin tones and women. This bias can lead to misidentification, which can have serious consequences, such as wrongful arrest or discrimination in hiring. In the context of healthcare, machine learning algorithms can also perpetuate bias and discrimination. For example, if the algorithm is trained on biased data, it may make less accurate predictions for certain demographic groups, such as racial minorities or people with disabilities.
+						
+						* Computational Limitations
+						Machine learning algorithms can be computationally expensive and require a lot of computing power to train and run. This can be a barrier to adoption in applications where real-time or low-power processing is required. One example of computational limitations in machine learning is training deep neural networks. Deep neural networks are a type of machine learning algorithm that can learn complex patterns in data by using many layers of interconnected nodes. However, training these models can be computationally expensive, requiring significant computing power and memory.
+						
+						For example, training a state-of-the-art natural language processing model like BERT (Bidirectional Encoder Representations from Transformers) can take weeks or even months on a large cluster of GPUs. This limits the ability of smaller organizations or individuals with limited computing resources to develop or use these models.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Algorithms and Methods</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Python Libraries</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Numpy</li>
+						<li class="fragment fade-in-then-semi-out">Pandas</li>
+						<li class="fragment fade-in-then-semi-out">Matplotlib</li>
+						<li class="fragment fade-in-then-semi-out">Scikit-Learn</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Data Preparation</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				
+				<section>
+					<h3>Model Evaluation</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Regression</h3>
+					<aside class="notes">
+						Regression is a type of supervised machine learning algorithm used to predict a continuous numerical outcome variable based on one or more predictor variables. In regression analysis, the goal is to establish a relationship between the predictor variables and the outcome variable, which can then be used to make predictions on new data.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Regressions Example</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Classification</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Clustering</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Examples</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Neural Networks</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Example</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>LNNs and Deep Learning</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				
+				<section>
+					<h3>What is a generative model</h3>
+					<aside class="notes">
+						CHAT GPT
+					</aside>
+				</section>
+
+				<section>
+					<h3>Ethics</h3>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section data-background="#002145">
+					<p> More from the Research Commons at (UBC-V)</p>
+					<ul>
+					  <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
+					  <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming events</a></li>
+					  <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources (OERs)</a></li>
+					</ul>
+				 </section>
+			 
+				 <section data-background="#002145">
+					 <p> And  from the Center for Scholarly Communication (UBC-O)</p>
+					 <ul>
+					   <li><a href="https://library.ok.ubc.ca/research/csc/">library.ok.ubc.ca/research/csc/</a></li>
+					   <li><a href="https://library.ok.ubc.ca/research/csc/workshops/">Upcoming events</a></li>
+					   </ul>
+				 </section>
+
+			</div>
+		</div>
+
+		<script src="https://ubc-library-rc.github.io/reveal-ubc/js/reveal.js"></script>
+
+		<script>
+	
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+	
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+	
+			// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/highlight/highlight.js' },
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/search/search.js', async: true },
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/notes/notes.js', async: true }
+					]
+				});
+	
+		</script>
+	
+		</body>
+	</html>
