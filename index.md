@@ -4,7 +4,7 @@ title: Outline
 nav_order: 1
 ---
 
-## Introduction to Machine Learning
+# Introduction to Machine Learning
 
 This workshop is designed to provide participants with a foundational understanding of the concepts, techniques, and tools used in machine learning. Through a combination of lectures and hands-on exercises, participants will gain practical experience with some of the most popular machine-learning algorithms and techniques.
 
@@ -38,4 +38,7 @@ At the end of this workshop, you will be able to:
 | 1:15 | Wrap-up and Discussion |
 
 ## Resources
-* [eg. link to external slides]
+* [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+* [Supervised Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction)
+* [Python Machine Learning Tutorial](https://www.youtube.com/watch?v=7eh4d6sabA0)
+* [Scikit-learn Examples](https://scikit-learn.org/stable/auto_examples/index.html)

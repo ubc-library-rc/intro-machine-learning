@@ -60,10 +60,10 @@
 
 				<section>
 					Use the Zoom toolbar to engage
-					<img  data-src="figures/zoom_toolbar.png" alt="The Zoom toolbar">
+					<img  data-src="../zoom-figures/zoom_toolbar.png" alt="The Zoom toolbar">
 					<div class="fragment">
 						<p style="font-size: smaller"><em>Participants</em> window</p>
-						<img data-src="figures/participants_window_menu.png" alt="The participants menu">
+						<img data-src="../zoom-figures/participants_window_menu.png" alt="The participants menu">
 					</div>
 					<aside class="notes">
 						<p>
@@ -81,9 +81,9 @@
 				</section>
 
 				<section>
-					<img width="500px" data-src="figures/open_annotate_toolbar.png" alt="annotate menu">
+					<img width="500px" data-src="../zoom-figures/open_annotate_toolbar.png" alt="annotate menu">
 					<div class="fragment" style="padding-top: 20px">
-						<img data-src="figures/annotate_toolbar.png" alt="annotation toolbar">
+						<img data-src="../zoom-figures/annotate_toolbar.png" alt="annotation toolbar">
 					</div>
 					<aside class="notes">
 						<p>
@@ -116,7 +116,7 @@
 					<ul>
 						<li class="fragment fade-in-then-semi-out">Define Machine Learning and recall the types of Machine Learning</li>
 						<li class="fragment fade-in-then-semi-out">Compare methods and techniques of Machine Learning</li>
-						<li class="fragment fade-in-then-semi-out">Identify appropriate methods based on the use cases</li>
+						<li class="fragment fade-in-then-semi-out">Identify appropriate methods for different use cases</li>
 						<li class="fragment fade-in-then-semi-out">Think about the ethical implications of using Machine Learning</li>
 					</ul>
 					<aside class="notes">
@@ -129,10 +129,9 @@
 				<section data-background="#e6f7ff">
 					<h3>Pre-workshop setup</h3>
 					<ul>
-						<li class="fragment fade-in-then-semi-out">UBC CYZYGY (https://ubc.syzygy.ca/)</li>
-						<li class="fragment fade-in-then-semi-out">GOOGLE COLAB (https://colab.research.google.com/)</li>
+						<li class="fragment fade-in-then-semi-out">UBC CYZYGY <a href="https://ubc.syzygy.ca/">(https://ubc.syzygy.ca/)</a></li>
+						<li class="fragment fade-in-then-semi-out">GOOGLE COLAB <a href="https://colab.research.google.com/">(https://colab.research.google.com/)</a></li>
 					</ul>
-					<p>For more information, check out <a href="https://ubc-library-rc.github.io/intro-git/">Pre-workshop setup</a></p>
 					<aside class="notes">
 						<p>
 							For hands-on exercises, we will use [Python](https://www.python.org/) on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
@@ -158,7 +157,7 @@
 
 				<section data-background="#e6f7ff">
 					<h3>Building a Machine Learning Model</h3>
-					<img height="600px" data-src="https://editor.analyticsvidhya.com/uploads/52606ML-stage.png">
+					<img height="500px" data-src="https://editor.analyticsvidhya.com/uploads/52606ML-stage.png">
 					<aside class="notes">
 						Building a machine learning model involves some or all of the following steps. While we do not cover the data collection step here, it is an important process that should be planned with extra care.
 
@@ -178,7 +177,7 @@
 
 				<section>
 					<h3>Predictors and Classifiers</h3>
-					<img height="600px" data-src="../content/images/Classifiers.jpg">
+					<img height="500px" data-src="../content/images/Classifiers.jpg">
 					<aside class="notes">
 						
 						A predictor is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
@@ -221,11 +220,7 @@
 
 				<section>
 					<h3>Types of Machine Learning</h3>
-					<ul>
-						<li class="fragment fade-in-then-semi-out">Supervised Learning</li>
-						<li class="fragment fade-in-then-semi-out">Unsupervised Learning</li>
-						<li class="fragment fade-in-then-semi-out">Reinforcement Learning</li>
-					</ul>
+					<img height="500px" data-src="https://static.javatpoint.com/tutorial/machine-learning/images/difference-between-supervised-and-unsupervised-learning.jpg">
 					<aside class="notes">
 						There are different types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning, each with its own set of algorithms and techniques. 
 
@@ -309,32 +304,42 @@
 				</section>
 
 				<section>
-					<h3>Algorithms and Methods</h3>
+					<h3>Python Libraries</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out"><a href=https://numpy.org/>Numpy</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href=https://pandas.pydata.org/>Pandas</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href=https://matplotlib.org/>Matplotlib</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href=https://scikit-learn.org/stable/>Scikit-Learn</a></li>
+					</ul>
 					<aside class="notes">
+						Numpy: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+						Pandas: pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+						Matplotlib: Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
+						scikit-learn is a free software machine learning library for the Python programming language. 
 					</aside>
 				</section>
 
 				<section>
-					<h3>Python Libraries</h3>
+					<h3>Data Preparation</h3>
 					<ul>
-						<li class="fragment fade-in-then-semi-out">Numpy</li>
-						<li class="fragment fade-in-then-semi-out">Pandas</li>
-						<li class="fragment fade-in-then-semi-out">Matplotlib</li>
-						<li class="fragment fade-in-then-semi-out">Scikit-Learn</li>
+						<li class="fragment fade-in-then-semi-out">Handling missing values</li>
+						<li class="fragment fade-in-then-semi-out">Feature scaling</li>
+						<li class="fragment fade-in-then-semi-out">Feature selection</li>
 					</ul>
 					<aside class="notes">
 					</aside>
 				</section>
 
 				<section>
-					<h3>Data Preparation</h3>
+					<h3>Algorithms and Methods</h3>
+					<img height="500px" data-src="https://ch.mathworks.com/help/stats/machinelearning_supervisedunsupervised.png">
 					<aside class="notes">
 					</aside>
 				</section>
 
-				
 				<section>
-					<h3>Model Evaluation</h3>
+					<h3>Algorithms and Methods</h3>
+					<img height="500px" data-src="https://ch.mathworks.com/help/stats/machinelearningtypes.jpg">
 					<aside class="notes">
 					</aside>
 				</section>
@@ -347,37 +352,13 @@
 				</section>
 
 				<section>
-					<h3>Regressions Example</h3>
-					<aside class="notes">
-					</aside>
-				</section>
-
-				<section>
-					<h3>Classification</h3>
-					<aside class="notes">
-					</aside>
-				</section>
-
-				<section>
-					<h3>Clustering</h3>
-					<aside class="notes">
-					</aside>
-				</section>
-
-				<section>
-					<h3>Examples</h3>
+					<h3>Classification and Clustering</h3>
 					<aside class="notes">
 					</aside>
 				</section>
 
 				<section>
 					<h3>Neural Networks</h3>
-					<aside class="notes">
-					</aside>
-				</section>
-
-				<section>
-					<h3>Example</h3>
 					<aside class="notes">
 					</aside>
 				</section>
@@ -392,7 +373,13 @@
 				<section>
 					<h3>What is a generative model</h3>
 					<aside class="notes">
-						CHAT GPT
+						Generative Pre-trained Transformer (GPT) is a type of neural network architecture designed for natural language processing (NLP) tasks. It was introduced by OpenAI in 2018 and has been used in a wide range of NLP applications, including language generation, translation, and understanding.
+
+						The key innovation of the GPT architecture is the use of a transformer-based model that is pre-trained on a large corpus of text data, typically billions of words. This pre-training process allows the model to learn the statistical patterns and relationships in the language, enabling it to generate human-like responses to input text.
+
+						The GPT model is trained in an unsupervised manner, which means that it does not require any labeled data for training. Instead, it learns from the raw text data, using a technique called self-supervised learning. During the pre-training process, the model is trained to predict the next word in a sequence of text, based on the previous words. This task is known as language modeling, and it allows the model to learn the structure and semantics of the language.
+
+						After pre-training, the GPT model can be fine-tuned on specific NLP tasks, such as text classification or language generation. Fine-tuning involves training the model on a smaller dataset that is specific to the task, while keeping the weights of the pre-trained model fixed. This allows the model to adapt to the specific task, while leveraging the knowledge it has learned from the pre-training process.
 					</aside>
 				</section>
 
