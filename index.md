@@ -34,8 +34,8 @@ At the end of this workshop, you will be able to:
 | 0:05 | Introduction |  
 | 0:15 | What is Machine Learning |
 | 0:30 | Algorithms & Methods |   
-| 1:00 | Impact of Machine Learning |
-| 1:15 | Wrap-up and Discussion |
+| 1:15| Impact of Machine Learning |
+| 1:30 | Wrap-up and Discussion |
 
 ## Resources
 * [Scikit-learn Documentation](https://scikit-learn.org/stable/)

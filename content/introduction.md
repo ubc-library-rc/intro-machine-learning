@@ -10,9 +10,9 @@ Machine learning is a field of computer science that involves teaching computers
 
 ## Building a Machine Learning Model
 
-Building a machine learning model involves some or all of the following steps. While we do not cover the data collection step here, it is an important process that should be planned with extra care.
+Building a machine learning model involves some or all of the following steps:
 
-- **Data Collection:** The first step in machine learning involves gathering and preparing data for use in a machine learning model. This process is critical because the quality of the data used in the model directly impacts its accuracy and effectiveness. This data can come from various sources, such as sensors, user inputs, or databases.
+- **Data Collection:** The first step in machine learning involves gathering and preparing data for use in a machine learning model. This process is critical because the quality of the data used in the model directly impacts its accuracy and effectiveness. This data can come from various sources, such as sensors, user inputs, or databases. While we do not cover the data collection step here, it is an important process that should be planned with extra care.
 
 - **Data Preprocessing:** Before the data can be used for machine learning, it needs to be cleaned, transformed, and formatted into a suitable format to be used by machine learning algorithms.
 
@@ -28,13 +28,11 @@ Building a machine learning model involves some or all of the following steps. W
 
 - **Data-driven vs theory-driven:** Machine learning is data-driven, which means that it uses data to make predictions and decisions. Classic science is theory-driven, which means that it starts with a hypothesis or theory and then tests it using experiments.
 
-- **Algorithmic vs experimental:** Machine learning uses algorithms to learn patterns in data and make predictions. Classic science uses experiments to test hypotheses and theories.
+- **Interpretability vs black box:** Classic science often emphasizes interpretability, where researchers aim to understand and explain the underlying mechanisms and principles governing a phenomenon. In machine learning, some algorithms, such as decision trees, are interpretable, but many ML algorithms, such as deep neural networks, are considered black boxes, as their inner workings can be complex and difficult to interpret.
 
-- **Prediction vs explanation:** Machine learning is often used for prediction, such as predicting which customers are most likely to buy a product or which patients are most likely to develop a certain disease. Classic science is often used for explanation, such as explaining how a chemical reaction works or how a disease progresses.
+- **Static vs adaptive::** Classic science typically relies on fixed models or theories that are refined over time through iterative experimentation. In contrast, machine learning models are adaptive and can continuously learn and improve from new data without explicit human intervention.
 
-- **Generalization vs specificity:** Machine learning algorithms are designed to generalize patterns across large datasets, meaning they can make predictions on new, unseen data. Classic science is often specific to a particular problem or phenomenon.
-
-- **Iterative vs linear:** Machine learning is an iterative process, which means that it learns from its mistakes and improves over time. Classic science is often a linear process, with a clear start and end point.
+- **Human-designed features vs automated feature extraction:** In classic science, researchers often manually design features, which are specific attributes or characteristics of the data, to be used in their analyses. In machine learning, features are typically automatically extracted from the data during the training process, without explicit human design.
 
 - **Bias vs objectivity:** Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
 
@@ -54,13 +52,17 @@ Unsupervised learning is a type of machine learning where the algorithm is train
 
 Reinforcement learning is a type of machine learning that involves an agent interacting with an environment to learn how to make decisions that maximize a reward. The agent receives feedback from the environment in the form of rewards or penalties, and its goal is to learn a policy that maximizes the expected long-term reward. Reinforcement learning is often used in robotics, game playing, and control systems.
 
+* **Transfer learning:** 
+
+Transfer learning refers to a technique in which a pre-trained model, typically trained on a large dataset, is used as a starting point for training a new model on a smaller dataset or a different but related task. The idea is that the knowledge learned from the pre-trained model can be transferred to the new task, allowing the new model to start with some level of knowledge or "transfer" from the previous task, which can potentially improve its performance and reduce the amount of training data required.
+
 ### Predictors and Classifiers
 
 Predictors and classifiers are two types of algorithms commonly used to make predictions or decisions based on input data.
 
-A predictor is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
+A **predictor** is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
 
-A classifier, on the other hand, is an algorithm that takes in input data and assigns it to one of several pre-defined classes or categories. The goal of a classifier is to learn a decision boundary that separates the input data into these classes. For example, a classifier might take in an image and classify it as a dog or a cat.
+A **classifier**, on the other hand, is an algorithm that takes in input data and assigns it to one of several pre-defined classes or categories. The goal of a classifier is to learn a decision boundary that separates the input data into these classes. For example, a classifier might take in an image and classify it as a dog or a cat.
 
 There are many types of predictors and classifiers, each with its own set of algorithms and techniques. Some examples of predictors include linear regression, decision trees, and neural networks. Some examples of classifiers include logistic regression, support vector machines, and k-nearest neighbors.
 

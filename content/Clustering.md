@@ -21,7 +21,7 @@ Classification models can be evaluated using metrics such as accuracy, precision
 
 **Recall:** The proportion of true positive instances to the total number of instances that belong to the positive class.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/800px-Precisionrecall.svg.png" alt= “Precision-vs-Recall height="400">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/800px-Precisionrecall.svg.png" alt= “Precision-vs-Recall height="300">
 
 There are several types of classification and clustering algorithms, each with their own strengths and limitations. Here are some of the most commonly used types of classification and clustering:
 
@@ -33,7 +33,7 @@ There are several types of classification and clustering algorithms, each with t
 
 **Support Vector Machines (SVM):** SVM is a powerful binary classification algorithm that finds the optimal hyperplane that separates the data into different classes with the maximum margin. SVM can handle both linear and nonlinear classification tasks using different kernel functions.
 
-[Support vector machines](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/1024px-SVM_margin.png)
+![Support vector machines](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/1024px-SVM_margin.png)
 
 From Wikipedia: https://en.wikipedia.org/wiki/Support_vector_machine
 

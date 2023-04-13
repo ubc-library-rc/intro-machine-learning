@@ -40,9 +40,15 @@
 				https://ubc-library-rc.github.io/intro-machine-learning/
 				<aside class="notes">
 					<p>
-					The goal of this workshop is to show you the basic commands in Git and Github so that you can start to use it
-					to track your projects. This workshop only introduces a few features of Git. This session is prepared for you, so if you 
-					have questions or feel the pace is not aligned with your level, please let us know. 
+					Introduction to concepts, techniques, and tools
+					Types of machine learning: supervised, unsupervised
+					Algorithms: Regression, Classification, clustering, and neural networks
+					Steps to build a machine learning model
+					Reasons to attend the workshop: to know the capabilites of the tool to use in your work, to learn the effect of the tool
+					on your workflow
+					preworkshop setup: jupyter, python, I expect most participants have no background in python and do not want to teach python in this workshop
+					Learning Objectives
+					Schedule
 					</p>
 				</aside>
 				</section>
@@ -52,7 +58,7 @@
 					<p>UBC Vancouver is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam) peoples.</p>
 					<aside class="notes">
 						<p>
-						But before going into more details I would like to begin by acknowledging that I am fortunate to present this workshop in Burnaby which is the unceded territory of the Coast Salish People.
+						But before going into more details I would like to begin by acknowledging that I .
 						</p>
 					</aside>
 				</section>
@@ -60,10 +66,10 @@
 
 				<section>
 					Use the Zoom toolbar to engage
-					<img  data-src="../zoom-figures/zoom_toolbar.png" alt="The Zoom toolbar">
+					<img  data-src="../content/zoom-figures/zoom_toolbar.png" alt="The Zoom toolbar">
 					<div class="fragment">
 						<p style="font-size: smaller"><em>Participants</em> window</p>
-						<img data-src="../zoom-figures/participants_window_menu.png" alt="The participants menu">
+						<img data-src="../content/zoom-figures/participants_window_menu.png" alt="The participants menu">
 					</div>
 					<aside class="notes">
 						<p>
@@ -80,37 +86,6 @@
 					</aside>
 				</section>
 
-				<section>
-					<img width="500px" data-src="../zoom-figures/open_annotate_toolbar.png" alt="annotate menu">
-					<div class="fragment" style="padding-top: 20px">
-						<img data-src="../zoom-figures/annotate_toolbar.png" alt="annotation toolbar">
-					</div>
-					<aside class="notes">
-						<p>
-						For the next slide, use the annotation toolbar on the top of the screen.
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<div style="position: relative; float: left; width: 25%; font-size: smaller">
-						<p>I am not familiar with programming.</p>
-					</div>
-					<div style="position: relative; float: right; width: 25%; font-size: smaller">
-						<p>I use programming in my work/research</p>
-					</div>
-					<div style="clear: both">
-						<hr/>
-					</div>
-					<aside class="notes">
-						<p>
-						I was not sure about the right question to get a better idea of the audience for this workshop as Machine learning 
-						is a hot topic right now. I would like to ask you to put a mark on this spectrum and also unmute yourself or write in
-						the chat the reason you are attending in this workshop.
-						</p>
-					</aside>
-				</section>
-
 				<section data-background="#e6f7ff">
 					<h3>Learning Objectives</h3>
 					<ul>
@@ -121,7 +96,7 @@
 					</ul>
 					<aside class="notes">
 						<p>
-							
+						So, to touch various viewpoints of machine learning, we have the following learning objectives for this workshop:
 						</p>
 					</aside>
 				</section>
@@ -136,20 +111,41 @@
 						<p>
 							For hands-on exercises, we will use [Python](https://www.python.org/) on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
 
-							This workshop will involve hands-on exercises that require the use of programming tools and libraries commonly used in machine learning, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
-
+							hands-on exercises, programming tools and libraries, such as [Python] and [scikit-learn] prior familiarity with Python programming is recommended, we do not study the codes in detail
 						</p>
 					</aside>
-
 				</section>
 
 				<section data-background="#e6f7ff">
 					<h3>What is Machine Learning</h3>
 					<aside class="notes">
 						<p>
-							Machine learning is a field of computer science that involves teaching computers to learn from data, without explicitly defining the rules applicable to the problem.
+							field of computer science, teaching computers to learn from data, without explicitly defining the rules applicable to the problem.
 
-							In machine learning, algorithms are trained on large datasets to recognize patterns and relationships in the data, and then use this knowledge to make predictions or decisions about new data. This is done by creating mathematical models that can generalize patterns in the data and use them to make predictions or decisions about new data. Machine learning has many practical applications, including image and speech recognition, natural language processing, fraud detection, and predictive analytics in healthcare, finance, and many other fields.
+							algorithms or mathematical models trained  large datasets to recognize pattern
+						</p>
+					</aside>
+				</section>
+
+				<section data-background="#e6f7ff">
+					<h3>What is Machine Learning</h3>
+					<img  data-src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*x7P7gqjo8k2_bj2rTQWAfg.jpeg" alt="Statistics" height="400">
+					<p style="color:blue;font-size:11px;">original comic by <a href="https://www.instagram.com/sandserifcomics/">sandserif</a></p>
+					<aside class="notes">
+						<p>
+						</p>
+					</aside>
+				</section>
+				<section>
+					Introduction to Machine Learning workshop at the University of British Columbia
+					<img  data-src="Conversation-starter.png" alt="Conversation Starter" width="500">
+					<p style="color:blue;font-size:11px;">From <a href="https://openai.com/product/dall-e-2">DALL.E</a></p>
+					<aside class="notes">
+						<p>
+						machine learning has many practical application in language processing, fraud detection, healthcare, finance and ...
+						To kick things off, lets share one example of how you think machine learning is currently being used in everyday life or in your industry. What do you fine-tuned
+						fascinating about it?
+						predicting the remaining servie life of infrastructure assets based on the inspection reports, environmental conditions and much more.
 						</p>
 					</aside>
 				</section>
@@ -159,13 +155,11 @@
 					<h3>Building a Machine Learning Model</h3>
 					<img height="500px" data-src="https://editor.analyticsvidhya.com/uploads/52606ML-stage.png">
 					<aside class="notes">
-						Building a machine learning model involves some or all of the following steps. While we do not cover the data collection step here, it is an important process that should be planned with extra care.
-
-						- **Data Collection:** The first step in machine learning involves gathering and preparing data for use in a machine learning model. This process is critical because the quality of the data used in the model directly impacts its accuracy and effectiveness. This data can come from various sources, such as sensors, user inputs, or databases.
+						- **Data Collection:**: gathering and preparing data, he quality of the data used in the model directly impacts its accuracy and effectiveness
 						
-						- **Data Preprocessing:** Before the data can be used for machine learning, it needs to be cleaned, transformed, and formatted into a suitable format to be used by machine learning algorithms.
+						- **Data Preprocessing:** cleaned, transformed, and formatted into a suitable format 
 						
-						- **Model Training:** Once the data is ready, it is used to train a machine learning model. The model is a mathematical representation of the patterns and relationships in the data.
+						- **Model Training:** Once the data is ready, it is used to train a machine learning model.
 						
 						- **Model Evaluation:** After the model has been trained, it needs to be evaluated to ensure that it is performing accurately. This is done using a test set of data that was not used during the training process.
 						
@@ -174,12 +168,58 @@
 						- **Model Improvement:** Machine learning is an iterative process, so the model may need to be improved over time. This can involve retraining or fine-tuning its parametersthe with new data or continues stream of data.
 					</aside>
 				</section>
+					<section>
+					<h3>Comparing to Classic Science</h3>
+					<div style="font-size:smaller; text-align: left; margin-left: 30px">
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Data-driven vs theory-driven</li>
+							<li class="fragment fade-in-then-semi-out">Interpretability vs. black box</li>
+							<li class="fragment fade-in-then-semi-out">Iterative vs linear</li>
+							<li class="fragment fade-in-then-semi-out">Human-designed features vs automated feature extraction</li>
+							<li class="fragment fade-in-then-semi-out">Bias vs objectivity</li>
+						</ul>
+					</div>
+					<aside class="notes">
+						So whats the difference of machine learning models to mathematical models built based on classic science
+						- **Data-driven vs theory-driven: it starts with a hypothesis or theory and then tests it using experiments.
 
+						- Interpretability vs. black box: Classic science often emphasizes interpretability, where researchers aim to understand and explain the underlying mechanisms and principles governing a phenomenon. In machine learning, some algorithms, such as decision trees, are interpretable, but many ML algorithms, such as deep neural networks, are considered black boxes, as their inner workings can be complex and difficult to interpret.
+
+						- Iterative vs linear: Machine learning is an iterative process, which means that it learns from its mistakes and improves over time. Classic science is often a linear process, with a clear start and end point.
+						
+						- - Human-designed features vs automated feature extraction: In classic science, researchers often manually design features, which are specific attributes or characteristics of the data, to be used in their analyses. In machine learning, features are typically automatically extracted from the data during the training process, without explicit human design.
+						- Bias vs objectivity: Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
+						What other differences 
+					</aside>
+				</section>
+				<section>
+					<h3>Types of Machine Learning</h3>
+					<img height="500px" data-src="https://static.javatpoint.com/tutorial/machine-learning/images/difference-between-supervised-and-unsupervised-learning.jpg">
+					<p style="color:blue;font-size:11px;"> From javatpoint</p>
+					<aside class="notes">
+						There are different types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning, each with its own set of algorithms and techniques. 
+
+						* Supervised Learning:
+
+						an algorithm is trained on a labeled dataset, meaning that the dataset has input features (X) and corresponding output labels (Y). The goal of supervised learning is to learn a function that maps the input features to the output labels. Once the model is trained, it can be used to make predictions on new data. Examples of supervised learning tasks include image classification, speech recognition, and regression analysis.
+
+						* Unsupervised Learning:
+
+						Unsupervised learning is a type of machine learning where the algorithm is trained on an unlabeled dataset, meaning that there are no output labels (Y) associated with the input features (X). The goal of unsupervised learning is to learn patterns and structure in the data without the help of a labeled dataset. Examples of unsupervised learning tasks include clustering, anomaly detection, and dimensionality reduction.
+
+						* Reinforcement Learning:
+
+						Reinforcement learning is a type of machine learning that involves an agent interacting with an environment to learn how to make decisions that maximize a reward. The agent receives feedback from the environment in the form of rewards or penalties, and its goal is to learn a policy that maximizes the expected long-term reward. Reinforcement learning is often used in robotics, game playing, and control systems.
+					
+						* Transfer Learning:
+
+						Transfer learning refers to a technique in which a pre-trained model, typically trained on a large dataset, is used as a starting point for training a new model on a smaller dataset or a different but related task. The idea is that the knowledge learned from the pre-trained model can be transferred to the new task, allowing the new model to start with some level of knowledge or "transfer" from the previous task, which can potentially improve its performance and reduce the amount of training data required.
+					</aside>
+				</section>
 				<section>
 					<h3>Predictors and Classifiers</h3>
 					<img height="500px" data-src="../content/images/Classifiers.jpg">
 					<aside class="notes">
-						
 						A predictor is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
 
 						A classifier, on the other hand, is an algorithm that takes in input data and assigns it to one of several pre-defined classes or categories. The goal of a classifier is to learn a decision boundary that separates the input data into these classes. For example, a classifier might take in an image and classify it as a dog or a cat.
@@ -190,54 +230,6 @@
 					</aside>
 
 				</section>
-
-				<section>
-					<h3>Comparing to Classic Science</h3>
-					<div style="font-size:smaller; text-align: left; margin-left: 30px">
-						<ul>
-							<li class="fragment fade-in-then-semi-out">Data-driven vs theory-driven</li>
-							<li class="fragment fade-in-then-semi-out">Algorithmic vs experimental</li>
-							<li class="fragment fade-in-then-semi-out">Prediction vs explanation</li>
-							<li class="fragment fade-in-then-semi-out">Generalization vs specificity</li>
-							<li class="fragment fade-in-then-semi-out">Iterative vs linear</li>
-							<li class="fragment fade-in-then-semi-out">Bias vs objectivity</li>
-						</ul>
-					</div>
-					<aside class="notes">
-						- **Data-driven vs theory-driven:** Machine learning is data-driven, which means that it uses data to make predictions and decisions. Classic science is theory-driven, which means that it starts with a hypothesis or theory and then tests it using experiments.
-
-						- **Algorithmic vs experimental:** Machine learning uses algorithms to learn patterns in data and make predictions. Classic science uses experiments to test hypotheses and theories.
-
-						- **Prediction vs explanation:** Machine learning is often used for prediction, such as predicting which customers are most likely to buy a product or which patients are most likely to develop a certain disease. Classic science is often used for explanation, such as explaining how a chemical reaction works or how a disease progresses.
-
-						- **Generalization vs specificity:** Machine learning algorithms are designed to generalize patterns across large datasets, meaning they can make predictions on new, unseen data. Classic science is often specific to a particular problem or phenomenon.
-
-						- **Iterative vs linear:** Machine learning is an iterative process, which means that it learns from its mistakes and improves over time. Classic science is often a linear process, with a clear start and end point.
-
-						- **Bias vs objectivity:** Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
-					</aside>
-				</section>
-
-				<section>
-					<h3>Types of Machine Learning</h3>
-					<img height="500px" data-src="https://static.javatpoint.com/tutorial/machine-learning/images/difference-between-supervised-and-unsupervised-learning.jpg">
-					<aside class="notes">
-						There are different types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning, each with its own set of algorithms and techniques. 
-
-						* Supervised Learning:
-
-						Supervised learning is a type of machine learning where an algorithm is trained on a labeled dataset, meaning that the dataset has input features (X) and corresponding output labels (Y). The goal of supervised learning is to learn a function that maps the input features to the output labels. Once the model is trained, it can be used to make predictions on new data. Examples of supervised learning tasks include image classification, speech recognition, and regression analysis.
-
-						* Unsupervised Learning:
-
-						Unsupervised learning is a type of machine learning where the algorithm is trained on an unlabeled dataset, meaning that there are no output labels (Y) associated with the input features (X). The goal of unsupervised learning is to learn patterns and structure in the data without the help of a labeled dataset. Examples of unsupervised learning tasks include clustering, anomaly detection, and dimensionality reduction.
-
-						* Reinforcement Learning:
-
-						Reinforcement learning is a type of machine learning that involves an agent interacting with an environment to learn how to make decisions that maximize a reward. The agent receives feedback from the environment in the form of rewards or penalties, and its goal is to learn a policy that maximizes the expected long-term reward. Reinforcement learning is often used in robotics, game playing, and control systems.
-					</aside>
-				</section>
-
 				<section>
 					<h3>AI & Machine Learning</h3>
 					<aside class="notes">
@@ -252,21 +244,40 @@
 				</section>
 
 				<section>
-					<h3>Application of Machine Learning</h3>
+					<h3>Self driving cars</h3>
 					<ul>
-						<li class="fragment fade-in-then-semi-out">Self-driving Cars</li>
-						<li class="fragment fade-in-then-semi-out">Medical Diagnosis</li>
-						<li class="fragment fade-in-then-semi-out">Natural Language Processing</li>
+						<img  data-src="self-driving-cars.png" alt="Conversation Starter" width="500">
+						<p style="color:blue;font-size:11px;">From <a href="https://openai.com/product/dall-e-2">DALL.E</a></p>
 					</ul>
 					<aside class="notes">
 						Self-driving Cars: One of the most exciting and transformative applications of machine learning is in the field of self-driving cars. Self-driving cars use sensors such as cameras, LIDAR, and radar to gather information about their surroundings, and machine learning algorithms are used to process this information and make decisions in real-time. These algorithms can identify obstacles, pedestrians, and other vehicles on the road and make decisions such as changing lanes, braking, or accelerating. Self-driving cars have the potential to reduce accidents, improve traffic flow, and provide mobility to people who cannot drive, such as the elderly and disabled.
+					</aside>
+				</section>
 
+				<section>
+					<h3>Medical Diagnosis</h3>
+					<ul>
+						<img  data-src="medical-diagnosis.png" alt="Conversation Starter" width="500">
+						<p style="color:blue;font-size:11px;">From <a href="https://openai.com/product/dall-e-2">DALL.E</a></p>
+					</ul>
+					<aside class="notes">
 						Medical Diagnosis: Machine learning is also being used to improve medical diagnosis and treatment. For example, machine learning algorithms can analyze medical images such as X-rays, MRIs, and CT scans to identify patterns and anomalies that may indicate a particular disease or condition. This can help physicians make more accurate diagnoses and develop personalized treatment plans. Machine learning can also be used to analyze electronic health records and other health data to identify risk factors for certain diseases and develop preventive strategies.
+					</aside>
+				</section>
 
+
+				<section>
+					<h3>Natural Language Processing</h3>
+					<ul>
+						<img  data-src="natural-language-processing.jpeg" alt="Conversation Starter" width="500">
+					<p style="color:blue;font-size:11px;"> From 9Gag account on Pinterest</p>
+					</ul>
+					<aside class="notes">
 						Natural Language Processing: Natural language processing (NLP) is another fascinating application of machine learning. NLP algorithms can analyze and understand human language, which has the potential to revolutionize communication and interaction between humans and machines. NLP is used in various applications such as chatbots, voice assistants, and language translation. For example, chatbots can use NLP algorithms to understand customer inquiries and provide responses in natural language. Voice assistants such as Siri and Alexa use NLP algorithms to understand and respond to voice commands. Machine learning-based language translation tools can translate text between languages with increasing accuracy.
 
 					</aside>
 				</section>
+
 
 				<section>
 					<h3>Limits of Machine Learning</h3>
@@ -279,6 +290,8 @@
 						<li class="fragment fade-in-then-semi-out">Computational Limitations</li>
 					</ul>
 					<aside class="notes">
+						Some of the differentiation factors of machine learning models also count as their limits:
+						
 						* Garbage In = Garbage Out
 						In machine learning, the quality of the output model is directly dependent on the quality of the input data used to train it. If the input data is incomplete, noisy, or biased, the resulting model may be inaccurate or unreliable.
 						
@@ -303,13 +316,19 @@
 					</aside>
 				</section>
 
+				<section data-background="#002145">
+					<h3> Algorithms and Methods</h3>
+					<aside class="notes">
+						In this section, we will provide an overview of these three machine learning algorithms, discuss their strengths and weaknesses, and provide examples of their applications. 
+					</aside>
+				</section>
 				<section>
 					<h3>Python Libraries</h3>
 					<ul>
-						<li class="fragment fade-in-then-semi-out"><a href=https://numpy.org/>Numpy</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href=https://pandas.pydata.org/>Pandas</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href=https://matplotlib.org/>Matplotlib</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href=https://scikit-learn.org/stable/>Scikit-Learn</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://numpy.org/">Numpy</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://pandas.pydata.org/">Pandas</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://matplotlib.org/">Matplotlib</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://scikit-learn.org/stable/">Scikit-Learn</a></li>
 					</ul>
 					<aside class="notes">
 						Numpy: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
@@ -320,19 +339,35 @@
 				</section>
 
 				<section>
-					<h3>Data Preparation</h3>
+					<h3>Data Preparations</h3>
 					<ul>
+						<li class="fragment fade-in-then-semi-out">Types of Features</li>
 						<li class="fragment fade-in-then-semi-out">Handling missing values</li>
 						<li class="fragment fade-in-then-semi-out">Feature scaling</li>
 						<li class="fragment fade-in-then-semi-out">Feature selection</li>
 					</ul>
 					<aside class="notes">
+						Before going to the main step, it is a good idea to learn a little bit about the steps right before and after the model training step
+						
+						Continuous vs Categorical Variables
+						Handling missing values - drop, impute, forward backward fill
+						Feature scaling: standardization, min-max scaling, Feature selection
 					</aside>
 				</section>
 
 				<section>
+					<h3>Model Evaluation</h3>
+					<img  data-src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190523171258/overfitting_2.png" alt="Overfitting Underfitting" width="800">
+					<p style="color:blue;font-size:11px;"> From geeksforgeeks</p>
+					<aside class="notes">
+						Overfitting underfitting
+						we look at the measures for model evaluation in the next section as they are specific to the type of the model
+					</aside>
+				</section>
+				<section>
 					<h3>Algorithms and Methods</h3>
-					<img height="500px" data-src="https://ch.mathworks.com/help/stats/machinelearning_supervisedunsupervised.png">
+					<img height="400px" data-src="https://ch.mathworks.com/help/stats/machinelearning_supervisedunsupervised.png">
+					<p style="color:blue;font-size:11px;"> From mathworks</p>
 					<aside class="notes">
 					</aside>
 				</section>
@@ -340,38 +375,78 @@
 				<section>
 					<h3>Algorithms and Methods</h3>
 					<img height="500px" data-src="https://ch.mathworks.com/help/stats/machinelearningtypes.jpg">
+					<p style="color:blue;font-size:11px;"> From mathworks</p>
 					<aside class="notes">
 					</aside>
 				</section>
 
 				<section>
 					<h3>Regression</h3>
+					<img height="500px" data-src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning.png">
+					<p style="color:blue;font-size:11px;">From Javatpoint.com</p>
 					<aside class="notes">
 						Regression is a type of supervised machine learning algorithm used to predict a continuous numerical outcome variable based on one or more predictor variables. In regression analysis, the goal is to establish a relationship between the predictor variables and the outcome variable, which can then be used to make predictions on new data.
+						Linear, logistic, polynomial regression
+						First example and regression metrics at the end
 					</aside>
 				</section>
 
 				<section>
 					<h3>Classification and Clustering</h3>
+					<img height="500px" data-src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*H-0Hu35Un_buwheCFlTvbA.png">
+					<p style="color:blue;font-size:11px;">From miro account on Medium</p>
 					<aside class="notes">
-					</aside>
+					Classification uses supervised learning, where the algorithm is trained on a labeled dataset to learn the relationship between input features and output class labels. The trained model can then be used to predict the class labels of new, unseen data. Clustering uses unsupervised learning, where the algorithm groups similar data points together based on their similarity or distance from each other. The number of clusters may be predefined or learned from the data.
+					Classification metrics and algorithms
+					Clustering algorithms
+				</aside>
+				</section>
+
+				<section>
+					<h3>Anomaly Detection</h3>
+					<img height="500px" data-src="https://documentation.mindsphere.io/MindSphere/apis/analytics-anomalydetection/images/DBSCAN.png">
+					<p style="color:blue;font-size:11px;">From mindsphere</p>
+					<aside class="notes">
+					Classification uses supervised learning, where the algorithm is trained on a labeled dataset to learn the relationship between input features and output class labels. The trained model can then be used to predict the class labels of new, unseen data. Clustering uses unsupervised learning, where the algorithm groups similar data points together based on their similarity or distance from each other. The number of clusters may be predefined or learned from the data.
+					Classification metrics and algorithms
+					Clustering algorithms
+				</aside>
 				</section>
 
 				<section>
 					<h3>Neural Networks</h3>
+					<img height="500px" data-src="https://i0.wp.com/thedatascientist.com/wp-content/uploads/2018/03/simple_neural_network_vs_deep_learning.jpg">
+					<p style="color:blue;font-size:11px;">From thedatascientist</p>
 					<aside class="notes">
+						Neural networks are a type of machine learning algorithm modeled after the structure and function of the human brain. They are composed of layers of interconnected nodes, or “neurons”, that process information and make predictions based on patterns in the data. Neural networks have gained popularity in recent years due to their ability to learn complex patterns in data, which makes them well-suited for tasks such as image recognition, natural language processing, and speech recognition.
 					</aside>
 				</section>
 
 				<section>
 					<h3>LNNs and Deep Learning</h3>
+					<img  data-src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/SCALING_NETS_2880x1620_Lede.svg" alt="Large Neural Networks" width="700">
+					<p style="color:blue;font-size:11px;">From <a href="https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/">quantamagazine</a></p>
 					<aside class="notes">
 					</aside>
 				</section>
-
+				
+				<section>
+					<h3>Other Machine Learning Platforms</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out"><a href="https://www.tensorflow.org/">Tensorflow</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://pytorch.org/">Pytorch</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://keras.io/">Keras</a></li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
 				
 				<section>
 					<h3>What is a generative model</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out"><a href="https://openai.com/blog/chatgpt">ChatGPT</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://openai.com/product/dall-e-2">DALL.E</a></li>
+					</ul>
 					<aside class="notes">
 						Generative Pre-trained Transformer (GPT) is a type of neural network architecture designed for natural language processing (NLP) tasks. It was introduced by OpenAI in 2018 and has been used in a wide range of NLP applications, including language generation, translation, and understanding.
 
@@ -385,6 +460,22 @@
 
 				<section>
 					<h3>Ethics</h3>
+					<img  data-src="https://ubc-library-rc.github.io/intro-machine-learning/content/images/Ethics.jpg" alt="Ethics" width="700">
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<h3>Where to go from here?</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Learn math, programming, and software development: <a href="https://ubc-library-rc.github.io/">Digital Scholarship workshops at UBC Library</a></li>
+						<li class="fragment fade-in-then-semi-out">Online courses such as <a href="https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction/">Supervised Machine Learning course on Coursera</a></li>
+						<li class="fragment fade-in-then-semi-out">Youtube Tutorials such as <a href="Python Machine Learning Tutorial">Python Machine Learning Tutorial Series</a></li>
+						<li class="fragment fade-in-then-semi-out">Find similar examples in <a href="https://scikit-learn.org/stable/auto_examples/index.html">Scikit-learn documentation</a></li>
+						<li class="fragment fade-in-then-semi-out">Find communities such as <a href="https://www.kaggle.com/">Kaggle</a> or <a href="https://amscampusbase.ubc.ca/dsci/home/">AMS Data Science CLub</a></li>
+					</ul>
 					<aside class="notes">
 						
 					</aside>

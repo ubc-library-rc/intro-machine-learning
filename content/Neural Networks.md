@@ -89,11 +89,11 @@ Visualizing the inner layers of a neural network is a good way to get a deeper u
 
 For more complex neural network tasks, you may want to consider other libraries like TensorFlow or PyTorch:
 
-TensorFlow: Developed by Google, TensorFlow is one of the most widely used libraries for building and training neural networks. It offers excellent support for deep learning, including convolutional neural networks and recurrent neural networks, and provides a high level of flexibility and control over the model architecture. TensorFlow is known for its high performance and scalability, making it a good choice for large-scale production applications.
+[TensorFlow](https://www.tensorflow.org/): Developed by Google, TensorFlow is one of the most widely used libraries for building and training neural networks. It offers excellent support for deep learning, including convolutional neural networks and recurrent neural networks, and provides a high level of flexibility and control over the model architecture. TensorFlow is known for its high performance and scalability, making it a good choice for large-scale production applications.
 
-PyTorch: Developed by Facebook, PyTorch is another popular library for neural networks. It is known for its ease of use and flexibility, and is especially popular among researchers and academics. PyTorch offers dynamic computational graphs, which allow for more flexible and efficient model building, and provides excellent support for deep learning, including convolutional neural networks and recurrent neural networks.
+[PyTorch](https://pytorch.org/): Developed by Facebook, PyTorch is another popular library for neural networks. It is known for its ease of use and flexibility, and is especially popular among researchers and academics. PyTorch offers dynamic computational graphs, which allow for more flexible and efficient model building, and provides excellent support for deep learning, including convolutional neural networks and recurrent neural networks.
 
-Keras: Keras is a high-level neural network library that runs on top of TensorFlow, Theano, or Microsoft Cognitive Toolkit. It is known for its ease of use and simplicity, making it a good choice for beginners or those who want to quickly prototype and experiment with different models. Keras offers a range of pre-built models and layers.
+[Keras](https://keras.io/): Keras is a high-level neural network library that runs on top of TensorFlow, Theano, or Microsoft Cognitive Toolkit. It is known for its ease of use and simplicity, making it a good choice for beginners or those who want to quickly prototype and experiment with different models. Keras offers a range of pre-built models and layers.
 
 ## Generative Adversarial Networks
 
