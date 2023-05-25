@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Algorithms
-nav_order: 5
+nav_order: 6
 has_children: true
 has_toc: true
 ---
@@ -12,29 +12,6 @@ Machine learning algorithms have become increasingly popular in recent years due
 Linear regression is a supervised learning algorithm that is used to predict a continuous outcome variable based on one or more predictor variables. Clustering is an unsupervised learning algorithm that is used to group similar objects together based on their characteristics. Neural networks are a type of machine learning algorithm that are inspired by the structure and function of the human brain and can be used for both supervised and unsupervised learning tasks.
 
 In this section, we will provide an overview of these three machine learning algorithms, discuss their strengths and weaknesses, and provide examples of their applications. By understanding the strengths and weaknesses of different machine learning algorithms, practitioners can choose the most appropriate algorithm for their specific problem and data. 
-
-Many algorithms and tools are available as Python libraries, such as:
-
-1. [Numpy](https://numpy.org)
-2. [Pandas](https://pandas.pydata.org)
-3. [Matplotlib](https://matplotlib.org)
-4. [Scikit-learn](https://scikit-learn.org/stable)
-
-## Jupyter Notebooks
-
-[Jupyter notebooks](https://jupyter.org/) are a web-based interactive computing environment that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. They are commonly used for data exploration, prototyping, and visualization. Here are some reasons why you might want to use Jupyter notebooks:
-
-* **Interactive Computing:** Jupyter notebooks provide an interactive computing environment where you can execute code and see the results immediately. This makes it easy to explore data and experiment with different techniques and algorithms.
-
-* **Data Visualization:** Jupyter notebooks allow you to create rich data visualizations, including plots, charts, and maps. This makes it easy to explore and communicate your data to others.
-
-* **Collaboration:** Jupyter notebooks can be easily shared and collaboratively edited by multiple people, making it easy to work together on a project or analysis.
-
-* **Reproducibility:** Jupyter notebooks allow you to document your code and analysis in a single document, making it easy to reproduce your results and share them with others.
-
-* **Flexible:** Jupyter notebooks support many programming languages, including Python, R, Julia, and more, making it easy to use the language of your choice.
-
-Jupyter notebooks are particularly useful for exploratory data analysis, data visualization, and prototyping machine learning models. They allow you to work interactively with data and code, making it easy to iterate quickly and experiment with different techniques and algorithms.
 
 ## Data preparation
 
@@ -98,7 +75,7 @@ It is important to note that feature selection should be performed carefully, as
 
 ## Model evaluation
 
-Once a model is trained, it needs to be evaluated to measure its performance. Model evaluation is a critical step in the machine learning workflow as it helps determine the quality of a trained model and its ability to make accurate predictions or decisions on new, unseen data. Some common techniques for model evaluation include cross-validation, where the model is trained and evaluated on multiple subsets of the data, and holdout evaluation, where a portion of the data is reserved for testing. Model evaluation also involves visualizing and analyzing the model's predictions, error rates, and other performance metrics. The choice of metric depends on the type of problem, such as classification or regression, and the desired outcome of the model.
+Once a model is trained, it needs to be evaluated to measure its performance. Model evaluation is a critical step in the machine learning workflow as it helps determine the quality of a trained model and its ability to make accurate predictions or decisions on new, unseen data. Some common techniques for model evaluation include **cross-validation**, where the model is trained and evaluated on multiple subsets of the data, and **holdout** evaluation, where a portion of the data is reserved for testing. Model evaluation also involves visualizing and analyzing the model's predictions, error rates, and other performance metrics. The choice of metric depends on the type of problem, such as classification or regression, and the desired outcome of the model.
 
 **Overfitting** occurs when a machine learning model learns to perform well on the training data but fails to generalize to new, unseen data. This means that the model may have learned the training data too well, including noise or irrelevant patterns, and fails to generalize to new data. Overfitting can result in a model that has high accuracy on the training data but performs poorly on test data or real-world data. **Underfitting** occurs when a machine learning model fails to capture the underlying patterns or complexity in the training data. Underfitting can occur when a model is too simple or lacks the capacity to learn the relevant patterns in the data.
 

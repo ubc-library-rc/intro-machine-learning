@@ -6,17 +6,17 @@ nav_order: 1
 
 # Introduction to Machine Learning
 
-This workshop is designed to provide participants with a foundational understanding of the concepts, techniques, and tools used in machine learning. Through a combination of lectures and hands-on exercises, participants will gain practical experience with some of the most popular machine-learning algorithms and techniques.
+This workshop is designed to provide participants with a foundational understanding of the concepts, techniques, and tools used in machine learning. Through a combination of lectures and iteractive exercises, participants will gain practical experience with some of the most popular machine-learning algorithms and techniques.
 
-The workshop will cover a range of topics including supervised learning, unsupervised learning, and reinforcement learning. Through a series of lectures and hands-on exercises, participants will gain practical experience with some of the most popular machine learning algorithms and techniques such as regression, clustering, and neural networks. In addition to learning about the technical aspects of machine learning, this workshop also aims to promote critical thinking about the ethical implications of machine learning. Participants will examine the potential impact of machine learning on society and explore ethical considerations related to data privacy, bias, and fairness.
+The workshop will cover a range of topics including supervised and unsupervised learning and introduces the most popular machine learning algorithms and techniques such as regression, clustering, and neural networks. In addition to learning about the technical aspects of machine learning, this workshop also aims to promote critical thinking about the ethical implications of machine learning. Participants will examine the potential impact of machine learning on society and explore ethical considerations related to data privacy, bias, and fairness.
 
 By the end of the workshop, participants will have a broad understanding of the concepts and techniques used in machine learning, as well as some familiarity with the ethical considerations that underlie this field. This workshop is suitable for anyone who is interested in learning about machine learning, regardless of their technical background or prior experience. 
 
 
 ## Pre-workshop setup: 
-For hands-on exercises, we will use [Python](https://www.python.org/) on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
+For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
 
-This workshop will involve hands-on exercises that require the use of programming tools and libraries commonly used in machine learning, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
+This workshop involves the use of programming tools and libraries commonly employed in machine learning projects, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
 
 ** Disclosure**: The workshop description and course plan is partially prepared using [ChatGPT](https://openai.com/blog/chatgpt).
 

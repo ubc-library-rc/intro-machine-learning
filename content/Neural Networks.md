@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Neural Networks
-nav_order: 8
+nav_order: 9
 parent: Algorithms 
 ---
 # Neural Networks
@@ -16,6 +16,13 @@ The architecture of a neural network can vary widely, depending on the task at h
 In recent years, there have been significant advancements in the field of neural networks, including the development of deep learning algorithms that allow for the creation of networks with many layers, known as deep neural networks. These networks have achieved state-of-the-art results in a wide range of tasks, including image and speech recognition, natural language processing, and game playing.
 
 As with any machine learning algorithm, the performance of a neural network depends on the quality and quantity of the data used for training, as well as the choice of architecture and hyperparameters. Despite these challenges, neural networks continue to be a powerful tool for solving complex problems in a variety of fields.
+
+The working of a neural network can be challenging to interpret due to several reasons:
+1. Non-linearity: Neural networks are composed of multiple layers of interconnected nodes (neurons) that apply non-linear transformations to input data. These non-linearities make it difficult to understand how individual inputs contribute to the output.
+
+2. High Dimensionality: Neural networks often operate on high-dimensional data, such as images or text. With numerous input features, it becomes challenging to visualize and comprehend how each feature influences the network's output.
+
+3. Layer Abstraction: Neural networks consist of multiple layers, with each layer extracting increasingly abstract representations of the input data. The weights and connections between neurons are adjusted during the training process, resulting in complex internal representations that are not readily interpretable.
 
 Scikit-learn is not primarily designed for building neural networks. However, it does have some basic neural network functionality through the MLPClassifier and MLPRegressor classes in its neural network module. Here's an example of how to use MLPClassifier to build a simple neural network for a classification task:
 

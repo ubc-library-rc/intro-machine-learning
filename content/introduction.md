@@ -6,7 +6,7 @@ nav_order: 4
 
 # Introduction
 
-Machine learning is a field of computer science that involves teaching computers to learn from data, without explicitly defining the rules applicable to the problem. In machine learning, algorithms are trained on large datasets to recognize patterns and relationships in the data, and then use this knowledge to make predictions or decisions about new data. This is done by creating mathematical models that can generalize patterns in the data and use them to make predictions or decisions about new data. Machine learning has many practical applications, including image and speech recognition, natural language processing, fraud detection, and predictive analytics in healthcare, finance, and many other fields.
+Machine learning is a field of computer science that involves teaching computers to learn from data, without explicitly defining the rules applicable to the problem. In machine learning, algorithms are trained on large datasets to recognize patterns and relationships in the data, and then use this knowledge to make predictions or decisions about new data. This is done by creating mathematical models that can generalize patterns in the data. Machine learning has many practical applications, including image and speech recognition, natural language processing, fraud detection, and predictive analytics in healthcare, finance, and many other fields.
 
 ## Building a Machine Learning Model
 
@@ -26,15 +26,15 @@ Building a machine learning model involves some or all of the following steps:
 
 ## Comparing to Classic Science:
 
-- **Data-driven vs theory-driven:** Machine learning is data-driven, which means that it uses data to make predictions and decisions. Classic science is theory-driven, which means that it starts with a hypothesis or theory and then tests it using experiments.
+- **Theory-driven vs data-driven:** Machine learning is data-driven, which means that it uses data to make predictions and decisions. On the other hand, classic science is theory-driven, which means that it starts with a hypothesis or theory and then tests it using experiments.
 
 - **Interpretability vs black box:** Classic science often emphasizes interpretability, where researchers aim to understand and explain the underlying mechanisms and principles governing a phenomenon. In machine learning, some algorithms, such as decision trees, are interpretable, but many ML algorithms, such as deep neural networks, are considered black boxes, as their inner workings can be complex and difficult to interpret.
 
-- **Static vs adaptive::** Classic science typically relies on fixed models or theories that are refined over time through iterative experimentation. In contrast, machine learning models are adaptive and can continuously learn and improve from new data without explicit human intervention.
+- **Linear vs iterative:** Classic science follows a linear approach where researchers typically formulate a hypothesis, design experiments or observations to test that hypothesis, collect data, analyze the results, and draw conclusions. On the other hand, machine learning is characterized by an iterative process. Instead of relying solely on predefined rules or models, machine learning algorithms learn from data and improve their performance over time.
 
-- **Human-designed features vs automated feature extraction:** In classic science, researchers often manually design features, which are specific attributes or characteristics of the data, to be used in their analyses. In machine learning, features are typically automatically extracted from the data during the training process, without explicit human design.
+- **Human-designed features vs automated feature extraction:** In classic science, researchers often manually design features, which are specific attributes or characteristics of the problem, to be used in their analyses. In machine learning, features are typically automatically extracted from the data during the training process, without explicit human design.
 
-- **Bias vs objectivity:** Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
+- **Objectivity vs bias:** Machine learning algorithms can be biased if they are trained on biased data or if they contain biases built into their design. Classic science strives for objectivity and uses rigorous methods to minimize bias.
 
 ## Types of Machine Learning
 
@@ -50,11 +50,11 @@ Unsupervised learning is a type of machine learning where the algorithm is train
 
 * **Reinforcement Learning:**
 
-Reinforcement learning is a type of machine learning that involves an agent interacting with an environment to learn how to make decisions that maximize a reward. The agent receives feedback from the environment in the form of rewards or penalties, and its goal is to learn a policy that maximizes the expected long-term reward. Reinforcement learning is often used in robotics, game playing, and control systems.
+Reinforcement learning is a branch of machine learning where an agent learns to interact with an environment in order to maximize a reward signal. The agent learns through a process of trial and error, receiving feedback in the form of rewards or penalties based on its actions. Reinforcement learning is often used in dynamic and interactive environments where actions have consequences and feedback is delayed, such as robotics, game playing, and control systems.
 
 * **Transfer learning:** 
 
-Transfer learning refers to a technique in which a pre-trained model, typically trained on a large dataset, is used as a starting point for training a new model on a smaller dataset or a different but related task. The idea is that the knowledge learned from the pre-trained model can be transferred to the new task, allowing the new model to start with some level of knowledge or "transfer" from the previous task, which can potentially improve its performance and reduce the amount of training data required.
+Transfer learning refers to a technique in which a pre-trained model, typically trained on a large dataset, is used as a starting point for training a new model on a smaller dataset or a different but related task. The idea is that the knowledge learned from the pre-trained model can be transferred to the new task to avoid redundant training. Transfer learning is particularly useful when the source and target tasks share common features or underlying patterns. 
 
 ### Predictors and Classifiers
 
@@ -90,7 +90,7 @@ One way to think about the relationship between AI and ML is that machine learni
 In machine learning, the quality of the output model is directly dependent on the quality of the input data used to train it. If the input data is incomplete, noisy, or biased, the resulting model may be inaccurate or unreliable. For example, suppose a machine learning model is being developed to predict which loan applications are likely to be approved by a bank. If the training dataset only contains loan applications from a particular demographic group or geographic region, the resulting model may be biased towards that group or region and may not generalize well to other groups or regions. This could lead to discrimination and unfair lending practices.
 
 * **Data Limitation:**
-Machine learning algorithms are only as good as the data they are trained on. If the data is biased, incomplete, or noisy, the algorithm may not be able to learn the underlying patterns or may learn incorrect patterns. Also, machine learning models require large amounts of labeled data for training, which can be expensive and time-consuming to obtain.
+Machine learning models require large amounts of labeled data or very large amount of unlabeled data for training, which can be expensive and time-consuming to obtain.
 
 * **Generalization and overfitting:**
 Machine learning models are typically trained on a specific dataset, and their ability to generalize to new data outside of that dataset may be limited. Overfitting can occur if the model is too complex or if it is trained on a small dataset, causing it to perform well on the training data but poorly on new data. When a model is overfitting, it is essentially memorizing the training data rather than learning the underlying patterns in the data.
@@ -99,7 +99,7 @@ Machine learning models are typically trained on a specific dataset, and their a
 Machine learning models can be complex and difficult to interpret, making it challenging to understand why they make certain predictions or decisions. This can be a problem in domains such as healthcare or finance where it is important to be able to understand the rationale behind a decision.
 
 * **Ethics and Bias Limitations:**
-Machine learning algorithms can amplify existing biases in the data they are trained on, leading to unfair or discriminatory outcomes. There is a risk of unintended consequences when using machine learning algorithms in sensitive areas such as criminal justice, hiring decisions, and loan applications. One example of bias in machine learning is in facial recognition technology. Studies have shown that facial recognition systems are less accurate in identifying people with darker skin tones and women. This bias can lead to misidentification, which can have serious consequences, such as wrongful arrest or discrimination in hiring. In the context of healthcare, machine learning algorithms can also perpetuate bias and discrimination. For example, if the algorithm is trained on biased data, it may make less accurate predictions for certain demographic groups, such as racial minorities or people with disabilities.
+Machine learning algorithms can amplify existing biases in the data they are trained on, leading to unfair or discriminatory outcomes. There is a risk of unintended consequences when using machine learning algorithms in sensitive areas such as criminal justice, hiring decisions, and loan applications. One example of bias in machine learning is in facial recognition technology. Studies have shown that facial recognition systems are less accurate in identifying people with darker skin tones and women. This bias can lead to misidentification, which can have serious consequences, such as wrongful arrest or discrimination in hiring.
 
 * **Computational Limitations:**
-Machine learning algorithms can be computationally expensive and require a lot of computing power to train and run. This can be a barrier to adoption in applications where real-time or low-power processing is required. One example of computational limitations in machine learning is training deep neural networks. Deep neural networks are a type of machine learning algorithm that can learn complex patterns in data by using many layers of interconnected nodes. However, training these models can be computationally expensive, requiring significant computing power and memory. For example, training a state-of-the-art natural language processing model like BERT (Bidirectional Encoder Representations from Transformers) can take weeks or even months on a large cluster of GPUs. This limits the ability of smaller organizations or individuals with limited computing resources to develop or use these models.
+Machine learning algorithms can be computationally expensive and require a lot of computing power to train and run. This can be a barrier to adoption in applications where real-time or low-power processing is required. One example of computational limitations in machine learning is training deep neural networks. Deep neural networks are a type of machine learning algorithm that can learn complex patterns in data by using many layers of interconnected nodes. However, training these models can be computationally expensive, requiring significant computing power and memory. For example, training a state-of-the-art natural language processing model like BERT (Bidirectional Encoder Representations from Transformers) can take weeks or even months on a large cluster of GPUs and consume a significant amount of energy. This limits the ability of smaller organizations or individuals with limited computing resources to develop or use these models.

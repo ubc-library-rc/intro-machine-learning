@@ -172,11 +172,11 @@
 					<h3>Comparing to Classic Science</h3>
 					<div style="font-size:smaller; text-align: left; margin-left: 30px">
 						<ul>
-							<li class="fragment fade-in-then-semi-out">Data-driven vs theory-driven</li>
-							<li class="fragment fade-in-then-semi-out">Interpretability vs. black box</li>
-							<li class="fragment fade-in-then-semi-out">Iterative vs linear</li>
+							<li class="fragment fade-in-then-semi-out">Theory-driven vs data-driven</li>
+							<li class="fragment fade-in-then-semi-out">Interpretability vs black box</li>
+							<li class="fragment fade-in-then-semi-out">Linear vs Iterative</li>
 							<li class="fragment fade-in-then-semi-out">Human-designed features vs automated feature extraction</li>
-							<li class="fragment fade-in-then-semi-out">Bias vs objectivity</li>
+							<li class="fragment fade-in-then-semi-out">Objectivity vs bias</li>
 						</ul>
 					</div>
 					<aside class="notes">
@@ -214,32 +214,6 @@
 						* Transfer Learning:
 
 						Transfer learning refers to a technique in which a pre-trained model, typically trained on a large dataset, is used as a starting point for training a new model on a smaller dataset or a different but related task. The idea is that the knowledge learned from the pre-trained model can be transferred to the new task, allowing the new model to start with some level of knowledge or "transfer" from the previous task, which can potentially improve its performance and reduce the amount of training data required.
-					</aside>
-				</section>
-				<section>
-					<h3>Predictors and Classifiers</h3>
-					<img height="500px" data-src="../content/images/Classifiers.jpg">
-					<aside class="notes">
-						A predictor is an algorithm that takes in a set of input variables and produces an output variable. The goal of a predictor is to learn a mathematical function that maps the input variables to the output variable. For example, a predictor might take in information about a house, such as its size, location, and number of bedrooms, and predict its price.
-
-						A classifier, on the other hand, is an algorithm that takes in input data and assigns it to one of several pre-defined classes or categories. The goal of a classifier is to learn a decision boundary that separates the input data into these classes. For example, a classifier might take in an image and classify it as a dog or a cat.
-
-						There are many types of predictors and classifiers, each with its own set of algorithms and techniques. Some examples of predictors include linear regression, decision trees, and neural networks. Some examples of classifiers include logistic regression, support vector machines, and k-nearest neighbors.
-
-						The choice between using a predictor or classifier depends on the nature of the problem at hand. If the goal is to predict a continuous variable, such as price, a predictor is typically used. If the goal is to classify data into discrete categories, such as whether an image is of a dog or a cat, a classifier is typically used.
-					</aside>
-
-				</section>
-				<section>
-					<h3>AI & Machine Learning</h3>
-					<aside class="notes">
-						Artificial intelligence (AI) and machine learning (ML) are related but distinct fields of study.
-
-						AI is a broad field that encompasses the study of creating intelligent machines that can perform tasks that typically require human intelligence, such as natural language processing, computer vision, and decision-making. AI includes both rule-based systems that are programmed explicitly and machine learning-based systems that learn from data.
-
-						Machine learning, on the other hand, is a subset of AI that focuses specifically on developing algorithms that can learn patterns in data and make predictions or decisions based on that data. In other words, machine learning is a way of achieving AI by enabling computers to learn from data without being explicitly programmed.
-
-						One way to think about the relationship between AI and ML is that machine learning is a technique used within the broader field of AI. Machine learning is a powerful tool for building intelligent systems because it can learn from large amounts of data, improve its performance over time, and generalize to new data.
 					</aside>
 				</section>
 
@@ -322,26 +296,11 @@
 						In this section, we will provide an overview of these three machine learning algorithms, discuss their strengths and weaknesses, and provide examples of their applications. 
 					</aside>
 				</section>
-				<section>
-					<h3>Python Libraries</h3>
-					<ul>
-						<li class="fragment fade-in-then-semi-out"><a href="https://numpy.org/">Numpy</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href="https://pandas.pydata.org/">Pandas</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href="https://matplotlib.org/">Matplotlib</a></li>
-						<li class="fragment fade-in-then-semi-out"><a href="https://scikit-learn.org/stable/">Scikit-Learn</a></li>
-					</ul>
-					<aside class="notes">
-						Numpy: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
-						Pandas: pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-						Matplotlib: Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
-						scikit-learn is a free software machine learning library for the Python programming language. 
-					</aside>
-				</section>
 
 				<section>
 					<h3>Data Preparations</h3>
 					<ul>
-						<li class="fragment fade-in-then-semi-out">Types of Features</li>
+						<li class="fragment fade-in-then-semi-out">Types of Features (continuous/categorical) </li>
 						<li class="fragment fade-in-then-semi-out">Handling missing values</li>
 						<li class="fragment fade-in-then-semi-out">Feature scaling</li>
 						<li class="fragment fade-in-then-semi-out">Feature selection</li>
@@ -364,6 +323,7 @@
 						we look at the measures for model evaluation in the next section as they are specific to the type of the model
 					</aside>
 				</section>
+
 				<section>
 					<h3>Algorithms and Methods</h3>
 					<img height="400px" data-src="https://ch.mathworks.com/help/stats/machinelearning_supervisedunsupervised.png">
@@ -377,6 +337,28 @@
 					<img height="500px" data-src="https://ch.mathworks.com/help/stats/machinelearningtypes.jpg">
 					<p style="color:blue;font-size:11px;"> From mathworks</p>
 					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Open Jupyter Notebooks</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Python Libraries</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out"><a href="https://numpy.org/">Numpy</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://pandas.pydata.org/">Pandas</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://matplotlib.org/">Matplotlib</a></li>
+						<li class="fragment fade-in-then-semi-out"><a href="https://scikit-learn.org/stable/">Scikit-Learn</a></li>
+					</ul>
+					<aside class="notes">
+						Numpy: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+						Pandas: pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+						Matplotlib: Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
+						scikit-learn is a free software machine learning library for the Python programming language. 
 					</aside>
 				</section>
 
@@ -473,9 +455,9 @@
 					<ul>
 						<li class="fragment fade-in-then-semi-out">Learn math, programming, and software development: <a href="https://ubc-library-rc.github.io/">Digital Scholarship workshops at UBC Library</a></li>
 						<li class="fragment fade-in-then-semi-out">Online courses such as <a href="https://www.coursera.org/learn/machine-learning?specialization=machine-learning-introduction/">Supervised Machine Learning course on Coursera</a></li>
-						<li class="fragment fade-in-then-semi-out">Youtube Tutorials such as <a href="Python Machine Learning Tutorial">Python Machine Learning Tutorial Series</a></li>
+						<li class="fragment fade-in-then-semi-out">Youtube Tutorials such as <a href="https://www.youtube.com/watch?v=7eh4d6sabA0">Python Machine Learning Tutorial Series</a></li>
 						<li class="fragment fade-in-then-semi-out">Find similar examples in <a href="https://scikit-learn.org/stable/auto_examples/index.html">Scikit-learn documentation</a></li>
-						<li class="fragment fade-in-then-semi-out">Find communities such as <a href="https://www.kaggle.com/">Kaggle</a> or <a href="https://amscampusbase.ubc.ca/dsci/home/">AMS Data Science CLub</a></li>
+						<li class="fragment fade-in-then-semi-out">Join communities such as <a href="https://www.kaggle.com/">Kaggle</a> or <a href="https://amscampusbase.ubc.ca/dsci/home/">AMS Data Science Club</a></li>
 					</ul>
 					<aside class="notes">
 						
