@@ -14,7 +14,11 @@ By the end of the workshop, participants will have a broad understanding of the 
 
 
 ## Pre-workshop setup: 
-For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
+For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [Google Colaboratory](https://colab.research.google.com/) account. 
+
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/machine-learning-examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 This workshop involves the use of programming tools and libraries commonly employed in machine learning projects, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
 
