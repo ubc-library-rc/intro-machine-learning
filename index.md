@@ -37,9 +37,19 @@ At the end of this workshop, you will be able to:
 | 0:00 | Welcome and using Zoom|
 | 0:05 | Introduction |  
 | 0:15 | What is Machine Learning |
-| 0:30 | Algorithms & Methods |   
-| 1:15| Impact of Machine Learning |
-| 1:30 | Wrap-up and Discussion |
+| 0:30 | Algorithms & Methods |
+| 1:00 | Examples   
+| 1:30| Impact of Machine Learning |
+| 1:45 | Wrap-up and Discussion |
+
+## Slides
+
+Find the workshops slide below or [open it in a new tab](https://ubc-library-rc.github.io/intro-machine-learning/slides/introduction.html):
+
+<iframe src="slides/introduction.html" title="demo embedded slide deck" scrolling="no" frameborder="0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;">
+Your browser does not support iframes.
+
+</iframe>
 
 ## Resources
 * [Scikit-learn Documentation](https://scikit-learn.org/stable/)
