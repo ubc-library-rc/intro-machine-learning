@@ -16,9 +16,29 @@ By the end of the workshop, participants will have a broad understanding of the 
 ## Pre-workshop setup: 
 For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [Google Colaboratory](https://colab.research.google.com/) account. 
 
-<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/machine-learning-examples.ipynb">
+For the Introduction to Machine Learning workshop, click on the following link:
+
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/machine-learning-examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+
+For the workshop focused on regression models, click on the following link:
+
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Regression-examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+For the workshop focused on classificiation and clustering models, click on the following link:
+
+**UNDER CONSTRUCTION**
+
+For the workshop focused on Neural Networks, click on the following link:
+
+**UNDER CONSTRUCTION**
+
+For the workshop focused on Timeseries, click on the following link:
+
+**UNDER CONSTRUCTION**
 
 This workshop involves the use of programming tools and libraries commonly employed in machine learning projects, such as [Python](https://www.python.org/) and [scikit-learn](https://scikit-learn.org/stable/). As such, prior familiarity with Python programming is recommended for participants to fully benefit from the practical component of the workshop. 
 

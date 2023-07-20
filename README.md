@@ -1,4 +1,4 @@
-# Name of workshop
+# Introduction to Machine Learning
 ### UBC Library Research Commons
 
 Link to workshop: https://ubc-library-rc.github.io/intro-machine-learning/

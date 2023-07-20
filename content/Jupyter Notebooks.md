@@ -62,3 +62,10 @@ We use the following Python libraries in this workshop. These libraries provide 
 3. [Matplotlib](https://matplotlib.org): Matplotlib is a popular visualization library that enables the creation of a wide range of static, animated, and interactive plots. It provides a comprehensive set of functions for generating line plots, scatter plots, bar plots, histograms, heatmaps, and more. Matplotlib allows customization of plot aesthetics and labeling, making it suitable for data exploration and presentation.
 
 4. [Scikit-learn](https://scikit-learn.org/stable): Scikit-learn is a robust library for machine learning tasks. It offers a unified interface for implementing various machine learning algorithms, including classification, regression, clustering, dimensionality reduction, and model selection. Scikit-learn also provides utilities for data preprocessing, model evaluation, and model deployment, making it an essential tool for machine learning practitioners.
+
+
+## Saving and Loading Models
+
+**Joblib** is a Python library that is commonly used in conjunction with scikit-learn and provides tools for easy and efficient saving and loading of Python objects, including machine learning models, to and from disk. It is particularly useful when working with large datasets or complex machine learning models that take a long time to train, as it allows you to persistently store the trained models on disk and reload them later, rather than retraining them from scratch every time you need to use them.
+
+Joblib provides an alternative to Python's built-in pickle module, but it is designed to be more efficient for dealing with large data, such as NumPy arrays, which are commonly used in machine learning applications. Joblib provides parallel processing capabilities, allowing you to save and load objects in parallel, which can significantly speed up the process. Joblib also includes features such as compression, which can reduce the size of the saved objects on disk, making it more efficient for storing and managing large numbers of machine learning models or other objects.

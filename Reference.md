@@ -33,3 +33,6 @@ Find the workshops slide below or <a href="slides/introduction.html" target="_bl
 * Join communities such as [Kaggle](https://www.kaggle.com/) or [AMS Data Science Club](https://amscampusbase.ubc.ca/dsci/home/)
 * [Scikit-learn Examples](https://scikit-learn.org/stable/auto_examples/index.html)
 
+### Regression: 
+* [Linear regression in Python](https://realpython.com/linear-regression-in-python/#simple-linear-regression-with-scikit-learn)
+
