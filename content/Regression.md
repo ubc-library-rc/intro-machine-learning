@@ -36,6 +36,6 @@ The following quantitative measures are some of the commonly used measures used 
 
 For Regression exercises, click on the following link:
 
-<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Regression-examples.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Regression_examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
