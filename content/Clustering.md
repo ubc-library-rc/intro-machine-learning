@@ -45,114 +45,6 @@ From Wikipedia: https://en.wikipedia.org/wiki/Support_vector_machine
 
 **Fuzzy Clustering:** Fuzzy clustering is a type of clustering algorithm that allows data points to belong to multiple clusters with different degrees of membership. It is useful when data points have ambiguous membership or when there are overlaps between clusters.
 
-Input
-{: .label .label-green}
-```python
-# Code source: Gaël Varoquaux
-#              Andreas Müller
-# Modified for documentation by Jaques Grobler
-# License: BSD 3 clause
-
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import make_pipeline
-from sklearn.datasets import make_circles
-from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-
-names = [
-    "Nearest Neighbors",
-    "Linear SVM",
-    "Neural Net",
-]
-
-classifiers = [
-    KNeighborsClassifier(3),
-    SVC(kernel="linear", C=0.025),
-    MLPClassifier(alpha=1, max_iter=1000),
-]
-
-dataset = make_circles(noise=0.2, factor=0.5, random_state=1)
-
-figure = plt.figure(figsize=(27, 9))
-
-ax.set_title("Input data")
-# Plot the training points
-ax.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap=cm_bright, edgecolors="k")
-# Plot the testing points
-ax.scatter(
-    X_test[:, 0], X_test[:, 1], c=y_test, cmap=cm_bright, alpha=0.6, edgecolors="k"
-)
-ax.set_xlim(x_min, x_max)
-ax.set_ylim(y_min, y_max)
-ax.set_xticks(())
-ax.set_yticks(())
-
- # preprocess dataset, split into training and test part
-X, y = dataset
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.4, random_state=42
-)
-
-x_min, x_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
-y_min, y_max = X[:, 1].min() - 0.5, X[:, 1].max() + 0.5
-
-# just plot the dataset first
-cm = plt.cm.RdBu
-cm_bright = ListedColormap(["#FF0000", "#0000FF"])
-ax = plt.subplot(len(datasets), len(classifiers) + 1, 1)
-ax.set_title("Input data", size=30)
-# Plot the training points
-ax.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap=cm_bright, edgecolors="k")
-# Plot the testing points
-ax.scatter(
-    X_test[:, 0], X_test[:, 1], c=y_test, cmap=cm_bright, alpha=0.6, edgecolors="k"
-)
-ax.set_xlim(x_min, x_max)
-ax.set_ylim(y_min, y_max)
-ax.set_xticks(())
-ax.set_yticks(())
-
-# iterate over classifiers
-i = 2
-for name, clf in zip(names, classifiers):
-    ax = plt.subplot(len(datasets), len(classifiers) + 1, i)
-
-    clf = make_pipeline(StandardScaler(), clf)
-    clf.fit(X_train, y_train)
-    score = clf.score(X_test, y_test)
-    DecisionBoundaryDisplay.from_estimator(
-        clf, X, cmap=cm, alpha=0.8, ax=ax, eps=0.5
-    )
-
-    # Plot the training points
-    ax.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap=cm_bright, edgecolors="k")
-    # Plot the testing points
-    ax.scatter(X_test[:, 0], X_test[:, 1], c=y_test, cmap=cm_bright, edgecolors="k", alpha=0.6)
-
-    ax.set_xlim(x_min, x_max)
-    ax.set_ylim(y_min, y_max)
-    ax.set_xticks(())
-    ax.set_yticks(())
-    if ds_cnt == 0:
-        ax.set_title(name, size=30)
-    ax.text(
-        x_max - 0.3,
-        y_min + 0.3,
-        ("%.2f" % score).lstrip("0"),
-        size=20,
-        horizontalalignment="right",
-    )
-    i += 1
-
-plt.tight_layout()
-plt.show()
-```
-
 ### Anomaly Detection
 
 Anomaly detection, also known as **outlier detection**, is a machine learning technique that involves identifying data points that deviate significantly from the normal behavior or pattern in a dataset. Anomaly detection is used to identify unusual, rare, or abnormal data points that do not conform to the expected behavior of the majority of the data points. We can use statistical methods, clustering-based methods, or distance-based methods for anomaly detection.
@@ -160,3 +52,9 @@ Anomaly detection, also known as **outlier detection**, is a machine learning te
 ![Anomaly Detection](https://images.deepai.org/django-summernote/2019-04-12/159c23a1-e5f4-413d-bed8-c3188f3fb4d8.png)
 
 Image from: DeepAI
+
+For classification and clustering exercises, open the following Jupyter Notebook: 
+
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Classification_examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>

@@ -66,7 +66,7 @@ A **classifier**, on the other hand, is an algorithm that takes in input data an
 
 There are many types of predictors and classifiers, each with its own set of algorithms and techniques. Some examples of predictors include linear regression, decision trees, and neural networks. Some examples of classifiers include logistic regression, support vector machines, and k-nearest neighbors.
 
-## Machine learning or Artificial Intelligence
+## Machine learning and AI: a short history
 
 Artificial intelligence (AI) and machine learning (ML) are related but distinct fields of study.
 
@@ -75,6 +75,12 @@ AI is a broad field that encompasses the study of creating intelligent machines 
 Machine learning, on the other hand, is a subset of AI that focuses specifically on developing algorithms that can learn patterns in data and make predictions or decisions based on that data. In other words, machine learning is a way of achieving AI by enabling computers to learn from data without being explicitly programmed.
 
 One way to think about the relationship between AI and ML is that machine learning is a technique used within the broader field of AI. Machine learning is a powerful tool for building intelligent systems because it can learn from large amounts of data, improve its performance over time, and generalize to new data.
+
+One pivotal moment often considered as the inception of AI is the [1956 Dartmouth workshop](https://www.newyorker.com/magazine/1981/12/14/a-i?lid=15p6fpaa92sd), where two brilliant computer scientists showcased the groundbreaking [Logic Theorist](http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf?lid=59sa97vseasn), marking the first instance of a program specifically designed to tackle problems that were previously thought to be exclusive to human capabilities. In 1997, IBM built a supercomputer, [Deep Blue](https://www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/?lid=qjpu3mkilq1i), that defeated the reigning world chess champion, Garry Kasparov, in a highly publicized match.
+
+The deep learning revolution started in 2012, when Computer scientist [Geoff Hinton](https://www.technologyreview.com/2020/11/03/1011616/ai-godfather-geoffrey-hinton-deep-learning-will-do-everything/?lid=fnezktm64e4d), of the University of Toronto, and his team created a computer system that could accurately identify 1,000 different random images. Hinton achieved this with “deep learning,” a term he coined to describe programs that get incrementally better at identifying patterns and categorizing data. Google soon hired Hinton to help lead its AI team. He recently left Google to freely warn about the risks of AI.
+
+[OpenAI](https://openai.com) was established by a group of prominent figures from Silicon Valley, including Elon Musk (Tesla), Peter Thiel (PayPal), and Sam Altman (Y Combinator), to develop “digital intelligence in the way that is most likely to benefit humanity.” In 2023, Microsoft invested heavily in OpenAI. OpenAI lunched [DALL-E 2](https://openai.com/dall-e-2), an image generator with an ability to produce images based on complex text prompts, and [ChatGPT](https://openai.com/blog/chatgpt?lid=kc1nqhpq3wph), a chat bot that can write pretty much any kind of text, in July and November 2022, repectively. Within two months of launch, ChatGPT boasted a record 100 million monthly active users. Around same time, competitors of them, such as [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F&lid=86nwawemh8ee) and [Bard](https://blog.google/technology/ai/bard-google-ai-search-updates/?lid=13qh60j5e8tc), are also launched.
 
 ## Applications of Machine Learning
 

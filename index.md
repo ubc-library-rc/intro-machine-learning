@@ -30,7 +30,9 @@ For the workshop focused on regression models, click on the following link:
 
 For the workshop focused on classificiation and clustering models, click on the following link:
 
-**UNDER CONSTRUCTION**
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Classification_examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 For the workshop focused on Neural Networks, click on the following link:
 
