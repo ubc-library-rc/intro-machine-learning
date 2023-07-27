@@ -16,29 +16,29 @@ By the end of the workshop, participants will have a broad understanding of the 
 ## Pre-workshop setup: 
 For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [Google Colaboratory](https://colab.research.google.com/) account. 
 
-For the Introduction to Machine Learning workshop, click on the following link:
+- Introduction to Machine Learning workshop
 
 <a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/machine-learning-examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-For the workshop focused on regression models, click on the following link:
+- Regression models
 
 <a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Regression_examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-For the workshop focused on classificiation and clustering models, click on the following link:
+- Classificiation and clustering models
 
 <a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Classification_examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-For the workshop focused on Neural Networks, click on the following link:
+- Neural Networks:
 
 **UNDER CONSTRUCTION**
 
-For the workshop focused on Timeseries, click on the following link:
+- Timeseries
 
 **UNDER CONSTRUCTION**
 
