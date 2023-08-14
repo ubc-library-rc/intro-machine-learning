@@ -36,6 +36,7 @@ Find the workshops slide below or <a href="slides/introduction.html" target="_bl
 * [Scikit-learn Examples](https://scikit-learn.org/stable/auto_examples/index.html)
 * [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu)
 * [A Gentle Introduction to Scikit-Learn: A Python Machine Learning Library](https://machinelearningmastery.com/a-gentle-introduction-to-scikit-learn-a-python-machine-learning-library/)
+* [What is Machine Learning - 6 hours crash course](https://www.youtube.com/watch?v=DooxDIRAkPA)
 
 ### Regression: 
 * [Linear regression in Python](https://realpython.com/linear-regression-in-python/#simple-linear-regression-with-scikit-learn)
@@ -45,3 +46,9 @@ Find the workshops slide below or <a href="slides/introduction.html" target="_bl
 * [Machine Learning with Python at Brocks University](https://brockdsl.github.io/Machine_Learning_with_Python/)
 * [Introduction to clustering with Scikit-Learn](https://tdmdal.github.io/sklearn-workshop/)
 * Youtube video on [Classification in Machine Learning](https://www.youtube.com/watch?v=xG-E--Ak5jg)
+
+### Neural Networks
+
+* [Building a Simple Neural Network from Scratch](https://towardsdatascience.com/building-a-simple-neural-network-from-scratch-a5c6b2eb0c34)
+* [Neural Network Playground](https://nnplayground.com)
+* [Tensorflow Neural Network Playground](https://playground.tensorflow.org)

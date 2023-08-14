@@ -36,7 +36,9 @@ For interactive part of the workshop, we will run some [Python](https://www.pyth
 
 - Neural Networks:
 
-**UNDER CONSTRUCTION**
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/NeuralNet_examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 - Timeseries
 

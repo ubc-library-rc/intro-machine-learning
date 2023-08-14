@@ -135,3 +135,9 @@ Some of the limits of GPTs:
 5. **Lack of interpretability:** GPTs are often referred to as "black box" models, as it can be challenging to understand how they generate their outputs. This lack of interpretability can be problematic in applications where transparency and explainability are important.
 
 6. **Hallucinations:** hallucination refers to the generation of text that is not grounded in the input or the real world. Hallucination occurs when the model generates text that is not based on the input context or is inconsistent with real-world knowledge. Hallucination is a common issue in generative models.
+
+For Neural Network exercises (MLP and CNN), open the following Jupyter Notebook: 
+
+<a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/NeuralNet_examples.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
