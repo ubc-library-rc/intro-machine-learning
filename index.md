@@ -12,11 +12,11 @@ The workshop series will cover a range of topics including supervised and unsupe
 
 By the end of the workshop series, participants will have a broad understanding of the concepts and techniques used in machine learning, as well as some familiarity with the ethical considerations that underlie this field. This workshop series is suitable for anyone who is interested in learning about machine learning, regardless of their technical background or prior experience. 
 
-## Schedule 
+## Structure 
 
 Note: For interactive part of the workshop, we will run some [Python](https://www.python.org/) codes on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [Google Colaboratory](https://colab.research.google.com/) account. 
 
-### Workshop 1: Regression Model
+### Workshop 1: Introduction & Regression Model
 
 <a target="_blank" href="https://colab.research.google.com/github/ubc-library-rc/intro-machine-learning/blob/main/Examples/Regression_examples.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
