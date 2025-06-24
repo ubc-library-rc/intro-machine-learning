@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resources and acknowledgements
-nav_order: 20
+nav_order: 49
 ---
 ## Resources
 
