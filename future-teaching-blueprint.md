@@ -1,4 +1,9 @@
-## Regression Workshop
+---
+layout: default
+nav_order: 21
+title: Regression workshop
+---
+## Regression workshop
 
 1. Linear Regression:
 	- Demonstrate how to perform simple linear regression using a small dataset.
